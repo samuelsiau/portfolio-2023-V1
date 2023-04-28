@@ -1,15 +1,17 @@
+.card-groups {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5.6rem;
+  padding: 5.6rem 0px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .card {
-  padding: 1rem 2rem;
-  border-radius: 4px;
-  background: var(--bg-color);
-  box-shadow: 0 1px 3px var(--color-grey);
-}
-
-.card p:last-child {
-  margin: 0;
-}
-
-.card header > * {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
 }
