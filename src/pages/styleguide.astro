@@ -1,0 +1,78 @@
+---
+import Layout from '../layouts/Layout.astro';
+import IconArrowRightLine from '../components/IconArrowRightLine.astro';
+import IconCornerRightDownLine from '../components/IconCornerRightDownLine.astro';
+
+const metaTitleName = "StyleGuide";
+
+---
+
+<Layout title={metaTitleName}>
+  <div class="container">
+    <section style="margin-bottom: 24px">
+      <header>Text</header>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+      <p>Paragraph - A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
+      <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+      </ul>
+      <ol>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+      </ol>
+      <a href="#">Link</a>
+    </section>
+    <section>
+      <header>Buttons</header>
+      <div>
+        <a class="button">Default</a>
+        <a class="button primary">Primary</a>
+        <a class="button secondary">Secondary</a>
+        <a class="button dark">Dark</a>
+        <a class="button error">Error</a>
+        <a class="button success">Success</a>
+      </div>
+      <div>
+        <a class="button outline">Outline</a>
+        <a class="button outline primary">Primary outline</a>
+        <a class="button outline secondary">Secondary outline</a>
+        <a class="button outline dark">Dark outline</a>
+      </div>
+      <div>
+        <a class="button clear">Clear</a>
+        <button type="button" class="button primary icon">New file 
+          <img src="https://icongr.am/feather/file.svg?size=16&amp;color=ffffff" alt="icon">
+        </button>
+        <button class="button icon-only">
+          <img src="https://icongr.am/feather/search.svg?size=24">
+        </button>
+      </div>
+      <div>
+        <a class="button primary">Primary <IconArrowRightLine className=""></IconArrowRightLine></a>
+        <button class="button primary">Primary <IconArrowRightLine className=""></IconArrowRightLine></button>
+        <a class="button outline primary">Primary outline <IconArrowRightLine className=""></IconArrowRightLine></a>
+        <button class="button outline primary">Primary outline <IconArrowRightLine className=""></IconArrowRightLine></button>
+        <a class="button link">Link <IconArrowRightLine className=""></IconArrowRightLine></a>
+        <button class="button link">Link <IconArrowRightLine className=""></IconArrowRightLine></button>
+        <a class="button link responsive">Primary <IconArrowRightLine className=""></IconArrowRightLine></a>
+      </div>
+    </section>
+    
+    <section>
+      <header>Grid</header>
+      <div class="row">
+        <div class="col bg-dark"> .col </div>
+        <div class="col bg-dark"> .col </div>
+        <div class="col bg-dark"> .col </div>
+      </div>
+    </section>
+  </div>
+</Layout>

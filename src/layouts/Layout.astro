@@ -1,35 +1,89 @@
 ---
+import '../styles/styles.scss';
+
 export interface Props {
 	title: string;
 }
 
+const metadataimage = "https://samuelsiau.github.io/p2023-media/mymetadataimage.jpeg";
 const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="generator" content={Astro.generator} />
+
+		<!-- Primary Meta Tags -->
 		<title>{title}</title>
+		<meta name="title" content="Samuel Siau - Product Designer">
+		<meta name="description" content="Hi I'm Samuel, a product designer passionate about designing and building delightful websites, products, and design systems that help people make a difference.">
+		<meta name="keywords" content="Samuel Siau, UX Designer, UI Design, Product Designer, UX/UI Designer, UI/UX Designer, Web designer, Design Systems. Art Direction, Portfolio website">
+  	<meta name="robots" content="index, follow">
+		<meta name="language" content="english">
+  	<meta name="author" content="Samuel Siau">
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://samuelsiau.com/">
+		<meta property="og:title" content="Samuel Siau - Product Designer">
+		<meta property="og:description" content="Hi I'm Samuel, a product designer passionate about designing and building delightful websites, products, and design systems that help people make a difference.">
+		<meta property="og:image" content={metadataimage}>
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://samuelsiau.com/">
+		<meta property="twitter:title" content="Samuel Siau - Product Designer">
+		<meta property="twitter:description" content="Hi I'm Samuel, a product designer passionate about designing and building delightful websites, products, and design systems that help people make a difference.">
+		<meta property="twitter:image" content={metadataimage}>
+
+		<!-- Favicon and App icon -->
+		<link rel="apple-touch-icon" sizes="57x57" href="https://samuelsiau.github.io/p2023-media/favicons/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="https://samuelsiau.github.io/p2023-media/favicons/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="https://samuelsiau.github.io/p2023-media/favicons/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="https://samuelsiau.github.io/p2023-media/favicons/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="https://samuelsiau.github.io/p2023-media/favicons/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="https://samuelsiau.github.io/p2023-media/favicons/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="https://samuelsiau.github.io/p2023-media/favicons/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="https://samuelsiau.github.io/p2023-media/favicons/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="https://samuelsiau.github.io/p2023-media/favicons/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="https://samuelsiau.github.io/p2023-media/favicons/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="https://samuelsiau.github.io/p2023-media/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="https://samuelsiau.github.io/p2023-media/favicons/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="https://samuelsiau.github.io/p2023-media/favicons/favicon-16x16.png">
+		<link rel="manifest" href="https://samuelsiau.github.io/p2023-media/favicons/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="https://samuelsiau.github.io/p2023-media/favicons/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="shortcut icon" href="https://samuelsiau.github.io/p2023-media/favicons/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="https://samuelsiau.github.io/p2023-media/favicons/favicon.ico" type="image/x-icon">
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="preload" href="https://samuelsiau.github.io/p2023-media/fonts/Recoleta-Medium.woff2" as="font" type="font/woff2" crossorigin>
 	</head>
 	<body>
+		<svg width="0" height="0" style="display:none">
+			<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="arrow-right-line">
+				<path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+			</symbol>
+			<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="corner-right-down-line">
+				<path d="M13.9999 5.00014L5.00003 5L5 7L11.9999 7.00011L12 17.1719L8.05027 13.2222L6.63606 14.6364L13 21.0004L19.364 14.6364L17.9498 13.2222L14 17.172L13.9999 5.00014Z"></path>
+			</symbol>
+		</svg>
+		<div hidden style="display:none">
+			<svg class="icon">
+				<use xlink:href="#arrow-right-line"></use>
+			</svg>
+			<svg class="icon">
+				<use xlink:href="#corner-right-down-line"></use>
+			</svg>
+		</div>
 		<slot />
 	</body>
 </html>
-<style is:global>
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background-color: #F6F6F6;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
-</style>

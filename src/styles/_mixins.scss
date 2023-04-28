@@ -1,0 +1,114 @@
+@mixin font-serif {
+  font-family: var(--font-family-serif);
+  font-weight: var(--font-weight-medium);
+  font-style: normal;
+}
+
+@mixin displayXLarge {
+  font-size: 66px;
+  line-height: 88px;
+  letter-spacing: -0.006em;
+}
+
+@mixin displayLarge {
+  font-size: 57px;
+  line-height: 80px;
+  letter-spacing: -0.006em;
+}
+
+@mixin displayMedium {
+  font-size: 45px;
+  line-height: 64px;
+  letter-spacing: -0.006em;
+}
+
+@mixin displaySmall {
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.006em;
+}
+
+@mixin headlineLarge {
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0em;
+}
+
+@mixin headlingMedium {
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 0em;
+}
+
+@mixin headlineSmall {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0em;
+}
+
+@mixin titleLarge {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0em;
+}
+
+@mixin titleMedium {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.004em;
+}
+
+@mixin titleSmall {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.004em;
+}
+
+@mixin labelLarge {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.004em;
+}
+
+@mixin labelMedium {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.012em;
+}
+
+@mixin labelSmall {
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.016em;
+}
+
+@mixin bodyXXLarge {
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.008em;
+}
+
+@mixin bodyXLarge {
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.008em;
+}
+
+@mixin bodyLarge {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.008em;
+}
+
+@mixin bodyMedium {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.004em;
+}
+
+@mixin bodySmall {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.012em;
+}
