@@ -1,9 +1,4 @@
 import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
-export default defineConfig({
-  outDir: './docs',
-  build: {
-    assets: 'assets'
-  }
-});
+export default defineConfig({});
