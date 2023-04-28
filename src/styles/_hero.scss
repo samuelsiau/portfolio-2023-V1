@@ -17,12 +17,21 @@
     z-index: 0;
   }
 
+  .videofallback {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    background-image: url('https://samuelsiau.github.io/p2023-media/videos/videofallbackimage.webp');
+    background-size: cover;
+  }
+
   .overlay {
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: 0;
-    background-image: url('https://samuelsiau.github.io/p2023-media/noise-texture.png');
+    background-image: url('https://samuelsiau.github.io/p2023-media/videos/noise-texture.png');
     background-repeat: repeat;
     mix-blend-mode: overlay;
   }
