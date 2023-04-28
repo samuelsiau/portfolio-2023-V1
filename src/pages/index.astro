@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 // import Card from '../components/Card.astro';
 import IconArrowRightLine from '../components/IconArrowRightLine.astro';
 import IconCornerRightDownLine from '../components/IconCornerRightDownLine.astro';
+import Navigation from '../components/Navigation.astro';
 
 const metaTitleName = "Samuel Siau -- Product Designer";
 const videoURL = "https://samuelsiau.github.io/p2023-media/videos/final.webm";
@@ -11,12 +12,21 @@ const mediaURL = "https://samuelsiau.github.io/p2023-media";
 ---
 
 <Layout title={metaTitleName}> 
-
-	<main>
-		<video width="320" height="240" controls>
-			<source src={videoURL} type="video/webm">
-			Your browser does not support the video tag.
+	<Navigation></Navigation>
+	<main class="layout">
+		<div class="heroHome">
+			<video autoplay muted loop>
+				<source src={videoURL} type="video/webm">
+				Your browser does not support the video tag.
 			</video>
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="content">
+					<h1>Hi I’m Samuel, a product designer passionate about designing and building delightful websites, products, and design systems that help people make a difference.</h1>
+					<div class="cta">Scroll to explore <IconCornerRightDownLine className=""></IconCornerRightDownLine></div>
+				</div>
+			</div>
+		</div>
 		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />

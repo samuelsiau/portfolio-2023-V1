@@ -1,75 +1,81 @@
-.nav {
+.nav-wrapper {
   display: flex;
-  min-height: 5rem;
-  align-items: stretch;
-}
-
-.nav img {
-  max-height: 3rem;
-}
-
-.nav > .container {
-  display: flex;
-}
-
-.nav-center,
-.nav-left,
-.nav-right {
-  display: flex;
-  flex: 1;
-}
-
-.nav-left {
-  justify-content: flex-start;
-}
-
-.nav-right {
-  justify-content: flex-end;
-}
-
-.nav-center {
+  flex-direction: column;
   justify-content: center;
-}
-
-@media screen and (max-width: 480px) {
-  .nav,
-  .nav > .container {
-    flex-direction: column;
-  }
-
-  .nav-center,
-  .nav-left,
-  .nav-right {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
-.nav a,
-.nav .brand {
-  text-decoration: none;
-  display: flex;
   align-items: center;
-  padding: 1rem 2rem;
-  color: var(--color-darkGrey);
+  border-bottom: 0.1rem solid var(--color-primary_01);
+  height: 7.2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  transition: linear 0.4s;
+  will-change: backgroudn-color;
+
+  &.scrolled {
+    background-color: black;
+  }
+
+  @media screen and (min-width: 900px) {
+    height: 9.6rem;
+  }
+
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .logo {
+    font-family: var(--font-family-serif);
+    font-weight: var(--font-weight-medium);
+    @include headlineSmall;
+    @media screen and (min-width: 900px) {
+      @include headlineMedium;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.6rem;
+    @media screen and (min-width: 900px) {
+      gap: 3.2rem;
+    }
+
+    a {
+      display: inline-flex;
+      @include bodyLarge;
+
+      @media screen and (min-width: 900px) {
+        @include bodyXLarge;
+        &:hover {
+          text-decoration: line-through;
+          text-decoration-thickness: 0.1rem;
+        }
+      }
+    }
+  }
 }
 
-.nav [aria-current="page"]:not(.button),
-.nav .active:not(.button) {
-  color: #000; /* fallback */
-  color: var(--color-primary_01);
+.headroom {
+  will-change: transform;
+  transition: all 0.3s linear;
+}
+.headroom--pinned {
+  transform: translateY(0%);
+}
+.headroom--unpinned {
+  transform: translateY(-100%);
 }
 
-.nav .brand {
-  font-size: 1.75em;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.nav .brand img {
-  padding-right: 1rem;
-}
-
-.nav .button {
-  margin: auto 1rem;
+.headroom--not-top {
+  background-color: var(--color-white);
 }

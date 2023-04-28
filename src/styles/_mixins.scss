@@ -5,110 +5,109 @@
 }
 
 @mixin displayXLarge {
-  font-size: 66px;
-  line-height: 88px;
+  font-size: 6.6rem;
+  line-height:1.3333333;
   letter-spacing: -0.006em;
 }
 
 @mixin displayLarge {
-  font-size: 57px;
-  line-height: 80px;
+  font-size: 5.7rem;
+  line-height: 1.4035087;
   letter-spacing: -0.006em;
 }
 
 @mixin displayMedium {
-  font-size: 45px;
-  line-height: 64px;
+  font-size: 4.5rem;
+  line-height: 1.4222222;
   letter-spacing: -0.006em;
 }
 
 @mixin displaySmall {
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 3.6rem;
+  line-height:1.3333333;
   letter-spacing: -0.006em;
 }
 
 @mixin headlineLarge {
-  font-size: 32px;
-  line-height: 48px;
+  font-size: 3.2rem;
+  line-height: 1.5;
   letter-spacing: 0em;
 }
 
-@mixin headlingMedium {
-  font-size: 28px;
-  line-height: 40px;
+@mixin headlineMedium {
+  font-size: 2.8rem;
+  line-height: 1.4285714;
   letter-spacing: 0em;
 }
 
 @mixin headlineSmall {
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 2.4rem;
+  line-height: 1.3333333;
   letter-spacing: 0em;
 }
 
 @mixin titleLarge {
-  font-size: 22px;
-  font-weight: 500;
-  line-height: 32px;
+  font-size: 2.2rem;
+  line-height: 1.4545454;
   letter-spacing: 0em;
 }
 
 @mixin titleMedium {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 1.8rem;
+  line-height: 1.3333333;
   letter-spacing: 0.004em;
 }
 
 @mixin titleSmall {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 1.4rem;
+  line-height: 1.7142857;
   letter-spacing: 0.004em;
 }
 
 @mixin labelLarge {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 1.4rem;
+  line-height: 1.7142857;
   letter-spacing: 0.004em;
 }
 
 @mixin labelMedium {
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 1.2rem;
+  line-height: 1.3333333;
   letter-spacing: 0.012em;
 }
 
 @mixin labelSmall {
-  font-size: 11px;
-  line-height: 16px;
+  font-size: 1.1rem;
+  line-height: 1.454545;
   letter-spacing: 0.016em;
 }
 
 @mixin bodyXXLarge {
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 2rem;
+  line-height: 1.6;
   letter-spacing: -0.008em;
 }
 
 @mixin bodyXLarge {
-  font-size: 18px;
-  line-height: 32px;
+  font-size: 1.8rem;
+  line-height: 1.7777777;
   letter-spacing: -0.008em;
 }
 
 @mixin bodyLarge {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1.6rem;
+  line-height: 1.5;
   letter-spacing: -0.008em;
 }
 
 @mixin bodyMedium {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 1.4rem;
+  line-height: 1.7142857;
   letter-spacing: 0.004em;
 }
 
 @mixin bodySmall {
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 1.2rem;
+  line-height: 1.3333333;
   letter-spacing: 0.012em;
 }
