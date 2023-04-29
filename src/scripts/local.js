@@ -6,13 +6,13 @@ const headroom = new Headroom(header);
 headroom.init();
 
 const heroHeading = document.querySelector('.animateHeroText'); 
-const splitType = new SplitType(heroHeading, {types: 'lines'});
+const splitType = new SplitType(heroHeading, {types: 'word'});
 
 // $('.animateHeroText .line').wrap('<div class="overflow-hidden"></div>');
 
-const homeHeroText = ScrollReveal().reveal('.heroHome .line', {
+const homeHeroText = ScrollReveal().reveal('.heroHome .word', {
   distance: '50px',
-  interval: 240
+  interval: 120
 });
 
 
@@ -41,7 +41,7 @@ CustomEase.create("hop", "0.5, 0, 0, 1");
 
 const animatedCard = ScrollReveal().reveal('.card .card-animate', { 
   distance: '50px',
-  interval: 240,
+  interval: 120,
   viewOffset: {
     bottom: 100,
   },
@@ -75,39 +75,3 @@ $('.backtotop2').on('click', function(){
 const currentYear = new Date().getFullYear();
 $("#currentyear").html(currentYear);
 
-
-$('.card').on('mouseenter', function(){
-  gsap.to('.cursor-eye', {
-    opacity: 1,
-    duration: 0.2
-  })
-})
-
-$('.card').on('mouseleave', function(){
-  gsap.to('.cursor-eye', {
-    opacity: 0,
-    duration: 0.2
-  })
-})
-
-$(document).mousemove(function(e){
-  const xpos = e.clientX;
-  const ypos = e.clientY;
-  const tl = gsap.timeline();
-  tl.to('.cursor-eye', {
-    x: xpos,
-    y: ypos,
-    duration: 1,
-    ease: "power1.out)"
-  })
-});
-
-// function moveVenueImage(e) {
-//   let xpos = e.clientX;
-//   let ypos = e.clientY;
-//   const tl = gsap.timeline();
-//   tl.to(venueImageWrap, {
-//     x: xpos,
-//     y: ypos
-//   });
-// }

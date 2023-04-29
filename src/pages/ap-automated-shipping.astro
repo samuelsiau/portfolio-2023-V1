@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navigation from "../components/Navigation.astro";
+import ProjectHero from "../components/projectHero.astro";
 
 
 const metaTitleName = "ArchiPro - Automated shipping | Samuel Siau - Product Designer";
@@ -10,6 +11,15 @@ const metaTitleName = "ArchiPro - Automated shipping | Samuel Siau - Product Des
 <Layout title="metaTitleName">
   <Navigation></Navigation>
   <main class="layout">
-    <h1>ArchiPro !</h1>
+    <ProjectHero 
+      title="Building Automated Shipping for Product Suppliers and Shipping Companies" 
+      client="ArchiPro" 
+      completion="2022 - 3 weeks, 40 hours per week." 
+      role="As the UX/UI Designer for the project, I was responsible for wireframing, prototyping, and conducting usability tests. I collaborated with the design team, product owner, and engineering team throughout the project." 
+      team="Mustafa Sheikh(Senior UX designer), Laura Weir(Product Owner), and Marcel-Edouard Saville (Engineer)" 
+      imageSmall="/archipro-as/as-hero-image@0.5x.webp" 
+      imageLarge="/archipro-as/as-hero-image@1x.webp" 
+      imageAlt="ArchiPro automated shipping">
+    </ProjectHero>
   </main>
 </Layout>

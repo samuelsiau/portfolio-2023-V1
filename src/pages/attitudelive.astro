@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navigation from "../components/Navigation.astro";
+import ProjectHero from "../components/projectHero.astro";
 
 
 const metaTitleName = "Attitude Live | Samuel Siau - Product Designer";
@@ -10,6 +11,15 @@ const metaTitleName = "Attitude Live | Samuel Siau - Product Designer";
 <Layout title="metaTitleName">
   <Navigation></Navigation>
   <main class="layout">
-    <h1>AttitudeLive</h1>
+    <ProjectHero 
+      title="Redesigning the AttitudeLive Website for Accessibility" 
+      client="Attitude Live" 
+      completion="2017 - 6 weeks, 40 hours per week." 
+      role="As the Senior UX/UI Designer, I oversaw the entire project, from research, site architecture, user flow, wireframes, art direction, UI design, prototype, and usability testing. Additionally, I collaborated with both the design and development teams." 
+      team="Maak Bow (Creative Director), David Huai(Engineer), Eva Lee(Engineer), Andy Han(Engineer), and Tina Matulic(Account Manager)." 
+      imageSmall="/attitudelive/al-hero-image@0.5x.webp" 
+      imageLarge="/attitudelive/al-hero-image@1x.webp" 
+      imageAlt="attitudelive">
+    </ProjectHero>
   </main>
 </Layout>

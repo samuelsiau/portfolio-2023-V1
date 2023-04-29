@@ -24,7 +24,7 @@
 .col,
 [class*=" col-"],
 [class^="col-"] {
-  margin: 0 calc(var(--grid-gutter) / 2) calc(var(--grid-gutter) / 2);
+  margin: 0 calc(var(--grid-gutter) / 2);
 }
 
 .col-1 {

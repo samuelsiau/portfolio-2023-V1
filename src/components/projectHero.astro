@@ -1,0 +1,64 @@
+---
+
+export interface Props {
+  title: string;
+  client: string;
+  completion: string;
+  role: string;
+  team: string;
+  imageSmall: string;
+  imageLarge: string;
+  imageAlt: string;
+}
+
+const { title, client, completion, role, team, imageSmall, imageLarge, imageAlt } = Astro.props;
+
+const videoURL = "https://samuelsiau.github.io/p2023-media/videos/final.webm";
+const mediaURL = "https://samuelsiau.github.io/p2023-media/";
+
+---
+
+<section class="projectHero" role="banner">
+  <div class="videofallback"></div>
+  <video autoplay muted loop>
+    <source src={videoURL} type="video/webm">
+    Your browser does not support the video tag.
+  </video>
+  <div class="overlay"></div>
+  <div class="container projectHeadingContainer">
+    <h1 class="projectTitle">{title}</h1>
+  </div>
+  <div class="container projectDetailContainer">
+    <div class="row">
+      <div class="col-12 col-5-lg">
+        <slot name="LinkToLiveSite" />
+      </div>
+      <div class="col-12 col-6-lg">
+        <div class="projectDetail">
+          <dl class="client">
+            <dt>Client</dt>
+            <dd>{client}</dd>
+          </dl>
+          <dl class="completion">
+            <dt>COMPLETION</dt>
+            <dd>{completion}</dd>
+          </dl>
+          <dl class="role">
+            <dt>MY ROLE</dt>
+            <dd>{role}</dd>
+          </dl>
+          <dl class="team">
+            <dt>TEAM</dt>
+            <dd>{team}</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="projectHeroImage">
+  <picture>
+    <source media="(min-width:900px)" srcset={mediaURL+imageLarge}>
+    <img src={mediaURL+imageSmall} alt={imageAlt}>
+  </picture>
+</section>

@@ -1,15 +1,28 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navigation from "../components/Navigation.astro";
+import ProjectHero from "../components/projectHero.astro";
+import IconArrowRightLine from "../components/IconArrowRightLine.astro";
+import IconArrowRightUpLine from "../components/IconArrowRightUpLine.astro";
 
 
 const metaTitleName = "JVNZ - Storybook For Me | Samuel Siau - Product Designer";
 
 ---
 
-<Layout title="metaTitleName">
+<Layout title={metaTitleName}>
   <Navigation></Navigation>
   <main class="layout">
-    <h1>Storybook For Me!</h1>
+    <ProjectHero 
+      title="Designing an E-commerce Responsive Website for Personalised Children's Books" 
+      client="JVNZ" 
+      completion="2017 - 5 weeks, 40 hours per week." 
+      role="As the Senior UX/UI Designer, I oversaw the entire project, from user interviews and site architecture to user flow, wireframes, art direction, UI design, prototypes, and usability testing. I also collaborated closely with the design and development teams." 
+      team="Maak Bow (Creative Director), Eva Lin(Engineer), Andy Han(Engineer), and Christine Mata(Account Director)." 
+      imageSmall="/storybookforme/storybook-hero-image@0.5x.webp" 
+      imageLarge="/storybookforme/storybook-hero-image@1x.webp" 
+      imageAlt="storybookforme">
+      <div class="cta" slot="LinkToLiveSite"><a class="button link responsive" href="https://storybookforme.com.au/" target="_blank">View live site <IconArrowRightLine className=""></IconArrowRightLine></a></div>
+    </ProjectHero>
   </main>
 </Layout>
