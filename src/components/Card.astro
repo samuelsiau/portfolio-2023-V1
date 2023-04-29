@@ -15,12 +15,12 @@ const { href, client, title, imageLarge, imageSmall, imageAlt } = Astro.props;
 ---
 
 <a href={href} class="card">
-	<div class="card__content">
+	<div class="card__content card-animate">
 		<p class="client">{client}</p>
 		<p class="title">{title}</p>
 		<div class="cta">Read case study <IconArrowRightLine className=""></IconArrowRightLine></div>
 	</div>
-	<div class="card__image">
+	<div class="card__image card-animate">
 		<!-- <img src={mediaURL+imageLarge} alt={imageAlt}> -->
 		<picture>
 			<source media="(min-width:900px)" srcset={mediaURL+imageLarge}>

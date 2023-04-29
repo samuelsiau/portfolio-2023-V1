@@ -86,3 +86,19 @@
   }
   
 }
+
+.cursor {
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.cursor-eye {
+  top: 0;
+  left: 0;
+  padding: 20px;
+  z-index: 1;
+  border-radius: 50%;
+  background-color: black;
+  z-index: 999;
+}

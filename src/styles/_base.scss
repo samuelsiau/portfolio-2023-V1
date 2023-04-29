@@ -99,9 +99,9 @@ a {
   text-decoration: none;
 }
 
-// a:hover:not(.button) {
-//   opacity: 0.75;
-// }
+a:hover:not(.button) {
+  opacity: 0.9;
+}
 
 button {
   font-family: inherit;
