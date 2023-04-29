@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-// import Card from '../components/Card.astro';
+import Card from '../components/Card.astro';
 import IconArrowRightLine from '../components/IconArrowRightLine.astro';
 import IconCornerRightDownLine from '../components/IconCornerRightDownLine.astro';
 import Navigation from '../components/Navigation.astro';
@@ -23,15 +23,90 @@ const mediaURL = "https://samuelsiau.github.io/p2023-media";
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="content">
-					<h1 class="animateHeroText">Hi I’m Samuel, a product designer passionate about designing and building delightful websites, products, and design systems that help people make a difference.</h1>
-					<div class="cta">Scroll to explore <IconCornerRightDownLine className=""></IconCornerRightDownLine></div>
+					<h1 class="animateHeroText">Hi I'm Samuel, a product designer passionate about designing and building delightful websites, products, and design systems that help people make a difference.</h1>
+					<div class="cta line">Scroll to explore <IconCornerRightDownLine className=""></IconCornerRightDownLine></div>
 				</div>
 			</div>
 		</section>
 		<section class="card-groups">
-			<div class="card">
-				<div>1231</div>
-				<div>123132</div>
+			<Card href="/ap-automated-shipping" client="ArchiPro" title="Building Automated Shipping for Product Suppliers and Shipping Companies" imageSmall="/archipro-as/as-hero-image@0.5x.webp" imageLarge="/archipro-as/as-hero-image@1x.webp" imageAlt="ArchiPro - Automated Shipping"></Card>
+			<Card href="/attitudelive" client="Attitude Live" title="Redesigning the AttitudeLive Website for Accessibility" imageSmall="/attitudelive/al-hero-image@0.5x.webp" imageLarge="/attitudelive/al-hero-image@1x.webp" imageAlt="Attitude Live - Website for accessibility"></Card>
+			<Card href="/storybookforme" client="JVNZ" title="Designing an E-commerce Responsive Website for Personalised Children's Books" imageSmall="/storybookforme/storybook-hero-image@0.5x.webp" imageLarge="/storybookforme/storybook-hero-image@1x.webp" imageAlt="Storybook For Me - Personalised Childre's Book"></Card>
+		</section>
+		<section id="about" class="about">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-6-md col-5-lg">
+						<div class="about__content">
+							<div class="about__heading">
+								<p>Hi again!</p>
+								<p>I'm Samuel Siau.</p>
+							</div>
+							<p>As a product designer with a user-centric design philosophy, I have a decade of industry experience working with diverse clients, from small agencies to large corporations. I am passionate about designing and building delightful websites, products, and design systems that help people make a difference. With a keen eye for detail and a focus on user experience, I strive to create innovative solutions that are both functional and visually appealing. </p>
+							<p>Design should solve problems and enhance people's lives. I constantly explore ways to push boundaries and create memorable experiences beyond expectations.</p>
+							<p>Outside of work, I'm a food enthusiast who loves exploring new restaurants, cooking new dishes, and discussing my next meal. Food is a passion of mine in all capacities.</p>
+							<picture>
+								<source media="(min-width:900px)" srcset=`${mediaURL}/myphoto@0.75x.webp`>
+								<img src=`${mediaURL}/myphoto@0.75x.webp` alt="Samuel Siau">
+							</picture>
+						</div>
+					</div>
+					<div class="col hide-xs hide-sm hide-md"></div>
+					<div class="col-12 col-6-md col-5-lg">
+						<div class="career__content">
+							<div class="career__heading">
+								<p>Experience</p>
+							</div>
+							<div class="metaGroups">
+								<div class="meta-list">
+									<div class="meta__content">
+										<p>ArchiPro Limited</p>
+										<p>UX/UI Designer</p>
+									</div>
+									<div class="meta__year">
+										<p>2020 — 2022</p>
+									</div>
+								</div>
+								<div class="meta-list">
+									<div class="meta__content">
+										<p>Journey Digital</p>
+										<p>Senior UX/UI Designer</p>
+									</div>
+									<div class="meta__year">
+										<p>2012 — 2022</p>
+									</div>
+								</div>
+								<div class="meta-list">
+									<div class="meta__content">
+										<p>Wag The Dog Agency</p>
+										<p>Web Designer</p>
+									</div>
+									<div class="meta__year">
+										<p>2010 — 2011</p>
+									</div>
+								</div>
+								<div class="meta-list">
+									<div class="meta__content">
+										<p>Splitfire</p>
+										<p>Contract Front-end Developer</p>
+									</div>
+									<div class="meta__year">
+										<p>Feb 2010 — Mar 2010</p>
+									</div>
+								</div>
+								<div class="meta-list">
+									<div class="meta__content">
+										<p>JWT (J. Walter Thompson)</p>
+										<p>Web Designer</p>
+									</div>
+									<div class="meta__year">
+										<p>2007 — 2009</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 		<p class="instructions">

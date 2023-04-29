@@ -3,15 +3,87 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 5.6rem;
-  padding: 5.6rem 0px;
-  max-width: 1440px;
+  padding: 5.6rem 0;
+  max-width: 144rem;
   margin: 0 auto;
+
+  @media screen and (min-width: 900px) {
+    max-width: 144rem+2.4rem+2.4rem;
+    padding: 12rem 2.4rem;
+    gap: 12rem;
+  }
+  
 }
 
 .card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
-  gap: 24px;
+  padding: 0;
+  gap: 2.4rem;
+
+  @media screen and (min-width: 900px) {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4.8rem;
+  }
+  
+}
+
+
+.card__content {
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  flex: 0 0 auto;
+  width: 100%;
+
+  @media screen and (min-width: 900px) {
+    padding-left: 0;
+    padding-right: 0;
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+  
+
+  .client {
+    @include font-mono;
+    @include labelLarge;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+  }
+
+  .title {
+    @include font-display;
+    @include headlineSmall;
+    margin-bottom: 1.6rem;
+    @media screen and (min-width: 1200px) {
+      @include displaySmall;
+      margin-bottom: 4rem;
+    }
+    
+  }
+
+  .cta {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @include buttonBodySmall;
+    gap: 8px;
+
+    @media screen and (min-width:900px) {
+      @include buttonBodyLarge;
+    }
+  }
+}
+
+.card__image {
+  flex: 0 0 auto;
+  width: 100%;
+
+  @media screen and (min-width: 900px) {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+  
 }

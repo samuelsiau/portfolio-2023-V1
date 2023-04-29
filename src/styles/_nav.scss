@@ -30,7 +30,7 @@
   }
 
   .logo {
-    font-family: var(--font-family-serif);
+    font-family: var(--font-family-display);
     font-weight: var(--font-weight-medium);
     @include headlineSmall;
     @media screen and (min-width: 900px) {

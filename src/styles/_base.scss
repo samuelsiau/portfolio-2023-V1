@@ -20,10 +20,11 @@
   --font-size-18: 1.8rem;
   --font-size-20: 2.0rem;
   --font-color: var(--color-primary_01);
-  --font-family-serif: "Recoleta";
-  --font-family-sans: 'Inter', -apple-system, "BlinkMacSystemFont", "Avenir",
+  --font-family: 'Inter', -apple-system, "BlinkMacSystemFont", "Avenir",
     "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --font-family-display: "Recoleta";
+  --font-family-sans: 'Inter', sans-serif;
   --font-family-mono: 'IBM Plex Mono', monaco, "Consolas", "Lucida Console", monospace;
   --font-weight-medium: 500;
   --font-weight-regular: 400;
@@ -52,7 +53,7 @@ body {
   font-size: var(--font-size-16);
   color: var(--font-color);
   font-family: "Segoe UI", "Helvetica Neue", sans-serif; /* fallback */
-  font-family: var(--font-family-sans);
+  font-family: var(--font-family);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
@@ -65,7 +66,7 @@ h3,
 h4,
 h5,
 h6 {
-  @include font-serif;
+  @include font-display;
   margin: 0
 }
 
@@ -212,12 +213,14 @@ abbr[title] {
   text-decoration: underline dotted;
 }
 
-img {
+img,
+picture {
   max-width: 100%;
 }
 
 img,
-svg {
+svg,
+picture {
   vertical-align: middle;
 }
 

@@ -1,0 +1,121 @@
+.about{
+  padding: 5.6rem 0;
+
+  @media screen and (min-width: 900px) {
+    padding: 0;
+  }
+  
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 2.4rem;
+
+  p {
+    @include bodyXLarge;
+
+    @media screen and (min-width: 900px) {
+      @include bodyXXLarge;
+    }
+    
+  }
+
+  picture {
+    margin-top: 0.8rem;
+    @media screen and (min-width: 900px) {
+      margin-top: 2.4em;
+    }
+    
+  }
+}
+
+.about__heading {
+  p {
+    @include font-display;
+    @include displaySmall;
+
+    @media screen and (min-width: 900px) {
+      @include displayMedium;
+    }
+    
+  }
+}
+
+
+.career__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.career__heading {
+  p {
+    @include font-display;
+    @include displaySmall;
+
+    @media screen and (min-width: 900px) {
+      @include displayMedium;
+    }
+    
+  }
+}
+
+.metaGroups {
+  display: flex;
+  flex-direction: column;
+
+  .meta-list {
+    // flex: none;
+    // order: 0;
+    // align-self: stretch;
+    // flex-grow: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    // justify-content: space-between;
+    gap: 0.8rem;
+    padding: 2.4rem 0;
+    @media screen and (min-width: 900px) {
+      padding: 3.2rem 0;
+    }
+  }
+
+  .meta-list + .meta-list {
+    border-top: 1px solid var(--color-primary_01);
+  }
+
+  .meta__content {
+    // flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    p:first-child {
+      white-space: pre;
+      @include font-display;
+      @include titleLarge;
+      @media screen and (min-width: 900px) {
+        @include headlineSmall;
+      }
+    }
+
+    p:last-child {
+      white-space: pre;
+      @include bodyXLarge;
+      @media screen and (min-width: 900px) {
+        @include bodyXXLarge;
+      }
+    }
+  }
+
+  .meta__year {
+    text-align: right;
+    // white-space: nowrap;
+    // flex: 0 0 auto;
+    @include bodyMedium;
+    @media screen and (min-width: 900px) {
+      @include bodyXLarge;
+    }
+    
+  }
+}

@@ -9,31 +9,32 @@ const splitType = new SplitType(heroHeading, {types: 'lines'});
 
 // $('.animateHeroText .line').wrap('<div class="overflow-hidden"></div>');
 
-// ScrollReveal().reveal('.animateHeroText .line', { 
-//   distance: '50px',
-//   interval: 420,
-//   reset: true
+const homeHeroText = ScrollReveal().reveal('.heroHome .line', { 
+  distance: '50px',
+  interval: 240,
+  reset: false,
+});
+
+
+// CustomEase.create("hop", "0.5, 0, 0, 1");
+
+// const homeHeroText = gsap.from('.heroHome .line', {
+//   opacity: 0,
+//   y: 50,
+//   duration: 1.2,
+//   ease: "hop",
+//   stagger: { amount: 1.2 },
 // });
 
-CustomEase.create("hop", "0.5, 0, 0, 1");
+// const animateHomeCTA =  gsap.from('.heroHome .cta',{
+//   opacity: 0,
+//   y: 50,
+//   duration: 1.2,
+//   ease: "hop"
+// })
 
-const homeHeroText = gsap.from('.animateHeroText .line', {
-  opacity: 0,
-  y: 50,
-  duration: 1.2,
-  ease: "hop",
-  stagger: { amount: 1.2 },
-}).then(displayCTAFunction);
+// animateHomeCTA.pause();
 
-const animateHomeCTA =  gsap.from('.heroHome .cta',{
-  opacity: 0,
-  y: 50,
-  duration: 1.2,
-  ease: "hop"
-})
-
-animateHomeCTA.pause();
-
-function displayCTAFunction() {
-  animateHomeCTA.play();
-}
+// function displayCTAFunction() {
+//   animateHomeCTA.play();
+// }

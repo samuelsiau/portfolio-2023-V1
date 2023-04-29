@@ -216,9 +216,7 @@ button:active:not(:disabled) {
   align-items: center;
   padding: 1.6rem 2.4rem;
   gap: 8px;
-  font-size: var(--font-size-20);
-  line-height: 1.2;
-  letter-spacing: -0.008em;
+  @include buttonBodyLarge;
   .icon {
     fill: var(--color-primary_01);
   }
@@ -238,32 +236,24 @@ button:active:not(:disabled) {
   padding: 0;
   background-color: transparent;
   gap: 8px;
-  font-size: var(--font-size-20);
-  line-height: 1.2;
-  letter-spacing: -0.008em;
+  @include buttonBodyLarge;
 }
 
 .button.primary.responsive,
 .button.outline.primary.responsive {
   padding: 0.8rem 1.6rem;
-  font-size: var(--font-size-18);
-  line-height: 1.5;
-  letter-spacing: -0.008em;
+  @include buttonBodySmall;
 
   @media screen and (min-width: 900px) {
     padding: 1.6rem 2.4rem;
-    font-size: var(--font-size-20);
-    line-height: 1.2;
+    @include buttonBodyLarge;
   }
 }
 
 .button.link.responsive {
-  font-size: var(--font-size-18);
-  line-height: 1.5;
-  letter-spacing: -0.008em;
+  @include buttonBodySmall;
 
   @media screen and (min-width: 900px) {
-    font-size: var(--font-size-20);
-    line-height: 1.2;
+    @include buttonBodyLarge;
   }
 }
