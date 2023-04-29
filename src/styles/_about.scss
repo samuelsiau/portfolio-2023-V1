@@ -2,7 +2,7 @@
   padding: 5.6rem 0;
 
   @media screen and (min-width: 900px) {
-    padding: 0;
+    padding: 0 0 12rem;
   }
   
 }
@@ -15,7 +15,6 @@
 
   p {
     @include bodyXLarge;
-
     @media screen and (min-width: 900px) {
       @include bodyXXLarge;
     }
@@ -47,6 +46,19 @@
 .career__content {
   display: flex;
   flex-direction: column;
+
+  &:first-child{
+    @media screen and (min-width: 900px) {}
+    padding-top: 42.4rem;
+  }
+}
+
+.career__content + .career__content {
+  padding-top: 5.6rem;
+  @media screen and (min-width: 900px) {
+    padding-top: 12rem;
+  }
+  
 }
 
 .career__heading {
@@ -66,10 +78,7 @@
   flex-direction: column;
 
   .meta-list {
-    // flex: none;
-    // order: 0;
-    // align-self: stretch;
-    // flex-grow: 0;
+    flex: 0 0 auto;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -87,11 +96,11 @@
   }
 
   .meta__content {
-    // flex: 0 0 auto;
+    flex: 0 1 auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     p:first-child {
-      white-space: pre;
       @include font-display;
       @include titleLarge;
       @media screen and (min-width: 900px) {
@@ -100,7 +109,6 @@
     }
 
     p:last-child {
-      white-space: pre;
       @include bodyXLarge;
       @media screen and (min-width: 900px) {
         @include bodyXXLarge;
@@ -110,7 +118,7 @@
 
   .meta__year {
     text-align: right;
-    // white-space: nowrap;
+    white-space: nowrap;
     // flex: 0 0 auto;
     @include bodyMedium;
     @media screen and (min-width: 900px) {

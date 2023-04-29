@@ -99,9 +99,9 @@ a {
   text-decoration: none;
 }
 
-a:hover:not(.button) {
-  opacity: 0.75;
-}
+// a:hover:not(.button) {
+//   opacity: 0.75;
+// }
 
 button {
   font-family: inherit;
@@ -246,6 +246,6 @@ body {
   }
 }
 
-.layout {
-  height:100%;
-}
+// .layout {
+//   height:100%;
+// }

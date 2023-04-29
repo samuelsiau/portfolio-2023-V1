@@ -1,4 +1,5 @@
 gsap.registerPlugin(CustomEase);
+gsap.registerPlugin(ScrollToPlugin);
 
 const header = document.querySelector(".nav-wrapper");
 const headroom = new Headroom(header);
@@ -12,11 +13,11 @@ const splitType = new SplitType(heroHeading, {types: 'lines'});
 const homeHeroText = ScrollReveal().reveal('.heroHome .line', { 
   distance: '50px',
   interval: 240,
-  reset: false,
+  reset: true,
 });
 
 
-// CustomEase.create("hop", "0.5, 0, 0, 1");
+CustomEase.create("hop", "0.5, 0, 0, 1");
 
 // const homeHeroText = gsap.from('.heroHome .line', {
 //   opacity: 0,
@@ -38,3 +39,12 @@ const homeHeroText = ScrollReveal().reveal('.heroHome .line', {
 // function displayCTAFunction() {
 //   animateHomeCTA.play();
 // }
+
+
+$('#backtotop').on('click', function(){
+  gsap.to(window, {
+    duration: 2.4, 
+    scrollTo: 0,
+    ease: "hop"
+  });
+});

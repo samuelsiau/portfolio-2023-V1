@@ -27,7 +27,6 @@
     align-items: flex-start;
     gap: 4.8rem;
   }
-  
 }
 
 
@@ -83,7 +82,7 @@
 
   @media screen and (min-width: 900px) {
     flex: 0 0 auto;
-    width: 66.66666667%;
+    width: calc(66.66666667% - 4.8rem);
   }
   
 }
