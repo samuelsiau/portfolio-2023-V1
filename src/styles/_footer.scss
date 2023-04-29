@@ -1,4 +1,85 @@
-footer {
-  display: block;
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
   border-top: 0.1rem solid var(--color-primary_01);
+  padding: 5.6rem 0;
+  gap: 1.6rem;
+
+  @media screen and (min-width: 900px) {
+    padding: 12rem 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6rem;
+    width: 100%;
+  }
+
+  .footerHeading {
+    @include font-display;
+    @include displaySmall;
+    @media screen and (min-width: 900px) {
+      @include displayXLarge;
+    }
+    
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.6rem;
+    @media screen and (min-width: 900px) {
+      gap: 3.2rem;
+    }
+    li {
+      a {
+        display: block;
+        @include bodyLarge;
+
+        @media screen and (min-width: 900px) {
+          @include bodyXXLarge;
+          &:hover {
+            text-decoration: line-through;
+            text-decoration-thickness: 0.1rem;
+          }
+        }
+        
+      }
+    }
+  }
+
+  .footerBottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    @include bodySmall;
+    @media screen and (min-width: 900px) {
+      padding-top: 1.6rem;
+      @include bodyXXLarge;
+    }
+  }
+
+  .backtotop1 {
+    @media screen and (min-width: 900px) {
+      display: none;
+    }
+  }
+
+  .backtotop2 {
+    display: none;
+
+    @media screen and (min-width: 900px) {
+      display: inline-flex;
+    }
+    
+  }
 }

@@ -41,10 +41,23 @@ CustomEase.create("hop", "0.5, 0, 0, 1");
 // }
 
 
-$('#backtotop').on('click', function(){
+$('.backtotop1').on('click', function(){
   gsap.to(window, {
     duration: 2.4, 
     scrollTo: 0,
     ease: "hop"
   });
 });
+
+$('.backtotop2').on('click', function(){
+  gsap.to(window, {
+    duration: 2.4, 
+    scrollTo: 0,
+    ease: "hop"
+  });
+});
+
+const currentYear = new Date().getFullYear();
+console.log(currentYear);
+
+$("#currentyear").html(currentYear);

@@ -48,8 +48,10 @@
   flex-direction: column;
 
   &:first-child{
-    @media screen and (min-width: 900px) {}
-    padding-top: 42.4rem;
+    padding-top: 5.6rem;
+    @media screen and (min-width: 900px) {
+      padding-top: 42.4rem;
+    }
   }
 }
 
