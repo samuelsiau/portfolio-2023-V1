@@ -16,3 +16,29 @@
 @import "_project";
 @import "_projectIframe";
 @import "_util";
+
+
+
+.animateIn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: blue;
+  z-index: 99;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.animateOut {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: yellow;
+  z-index: 99;
+  opacity: 0;
+  pointer-events: none;
+}

@@ -21,7 +21,6 @@ const { href, client, title, imageLarge, imageSmall, imageAlt } = Astro.props;
 		<div class="cta">Read case study <IconArrowRightLine className=""></IconArrowRightLine></div>
 	</div>
 	<div class="card__image card-animate">
-		<!-- <img src={mediaURL+imageLarge} alt={imageAlt}> -->
 		<picture>
 			<source media="(min-width:900px)" srcset={mediaURL+imageLarge}>
 			<img src={mediaURL+imageSmall} alt={imageAlt}>
