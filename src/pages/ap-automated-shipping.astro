@@ -1,8 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
 import ProjectHero from "../components/projectHero.astro";
-
+import IconArrowRightLine from "../components/IconArrowRightLine.astro";
+import ProjectSection from "../components/ProjectSection.astro";
+import CopiesWrapper from "../components/CopiesWrapper.astro";
+import ImageWrapper from "../components/ImageWrapper.astro";
+import Figcaption from "../components/Figcaption.astro";
+import SectionSeparator from "../components/SectionSeparator.astro";
+import IframeWrapper from "../components/IframeWrapper.astro";
 
 const metaTitleName = "ArchiPro - Automated shipping | Samuel Siau - Product Designer";
 
@@ -21,5 +28,171 @@ const metaTitleName = "ArchiPro - Automated shipping | Samuel Siau - Product Des
       imageLarge="/archipro-as/as-hero-image@1x.webp" 
       imageAlt="ArchiPro automated shipping">
     </ProjectHero>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>The Challenge</h1>
+        <p>Manual forms were a significant source of inefficiency and inaccuracy in the traditional shipping process for suppliers. They often led to errors in weight or details, which created problems for shipping companies. To overcome this challenge, a creative solution was needed to simplify the process, increase accuracy, and improve the shipping experience for everyone involved.</p>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <h1>The Solution</h1>
+        <p>We offered a supplier business account order management system that automates the shipping process for suppliers. No more manual forms or errors. Our solution connects suppliers and shipping companies, simplifies the process and improves efficiency.</p>
+      </CopiesWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Research</h1>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <h2>User interview</h2>
+        <p>We found the following gaps through qualitative interviews with product suppliers and shipping companies.</p>
+        <ul>
+          <li>The shipping process for suppliers was cumbersome, involving multiple manual steps such as contacting the shipping partner for quotes, confirming shipping prices to buyers, filling in the buyer's information on the shipping partner's website, scheduling pickups, and sending confirmation and tracking details. This called for a more streamlined solution to reduce manual effort and simplify the shipping workflow.</li>
+          <li>The return process for buyers was complex, involving contacting the supplier, arranging for pick-up with the shipping partner, and deducting shipping costs from the refund once the product was returned. This added to the overall complexity and time involved in processing returns, creating challenges for buyers and suppliers.</li>
+          <li>Inaccurate weight or details provided by the supplier could cause hassle for the shipping company, resulting in delivery delays or additional costs for the buyer.</li>
+        </ul>
+      </CopiesWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>User Journey</h1>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <p>To understand the user's frustration, we created a user journey map.</p>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/archipro-as/as-userjourney.webp"></ImageWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Wireframes &amp; Prototypes</h1>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <p>As part of my responsibilities for the project, I took the next step after solidifying ideas and creating high-fidelity wireframes based on initial concepts. This included wireframing and creating a clickable prototype to visualise the proposed solutions. A product requirements team was established, specifically focusing on improving the shipping process for suppliers, creating a consignment for the shipping company, and streamlining the refund process for suppliers who received customer refund requests.</p>
+      </CopiesWrapper>
+      <IframeWrapper>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FL7wv3hUEQn1t2BtImTSjpg%2FPortfolio---ArchiPro---Automated-shipping%3Fnode-id%3D4082%253A47195%26t%3DZNWX5bevU1JdIPbr-1" allowfullscreen></iframe>
+      </IframeWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Usability Testing</h1>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <p>I completed the clickable prototype, and it is now ready for testing. These high-fidelity prototypes will allow us to evaluate the usability and functionality of our design. Before conducting the testing, we created a usability testing plan and checklist that included all the information and goals we wanted to achieve. </p>
+        <p><b>Testing objective:</b></p>
+        <ul>
+          <li>Observe how participants navigate the shipping and refund processes to accomplish their goals.</li>
+          <li>Test and see if participants get to the end of their tasks using different methods.</li>
+          <li>Identify any point of confusion for the whole process of shipping and refund process.</li>
+          <li>Get feedback from participants on the shipping and refund process's usability.</li>
+          <li>Test whether the shipping and refund process is user-friendly and easy to use.</li>
+        </ul>
+        <p><b>Tasks:</b></p>
+        <ul>
+          <li>Confirm order, create a consignment and enter package details to ship the item to the customer.</li>
+          <li>Manage refund requests from the customer, and apply for refund request approval.</li>
+        </ul>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <p><b>View prototypes:</b></p>
+        <p><a href="https://www.figma.com/proto/L7wv3hUEQn1t2BtImTSjpg/Portfolio---ArchiPro---Automated-shipping?page-id=4353%3A58194&node-id=4352-59959&viewport=240%2C486%2C0.09&scaling=scale-down-width&starting-point-node-id=4352%3A59959" target="_blank" class="button primary">Shipping process <IconArrowRightLine className=""></IconArrowRightLine></a></p>
+        <p><a href="https://www.figma.com/proto/L7wv3hUEQn1t2BtImTSjpg/Portfolio---ArchiPro---Automated-shipping?page-id=4352%3A59041&node-id=4352-59043&viewport=111%2C810%2C0.07&scaling=scale-down-width&starting-point-node-id=4352%3A59043" target="_blank" class="button primary">Refund process <IconArrowRightLine className=""></IconArrowRightLine></a></p>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/archipro-as/usertesting-01.webp"></ImageWrapper>
+      <ImageWrapper imageSource="/archipro-as/usertesting-02.webp"></ImageWrapper>
+      <CopiesWrapper>
+        <h2>Testing Insights</h2>
+        <p>A total of 5 participants were used for this round of testing. They agreed to jump on a virtual Zoom call and screen share while testing the prototype.</p>
+        <p><b>Key Findings:</b></p>
+        <ul>
+          <li>One participant liked the shipping and refund process is user-friendly and easy to use.</li>
+          <li>All participants navigated through the shipping and refund process successfully.</li>
+          <li>Three participants took a while to finish all the tasks.</li>
+          <li>Three participants pointed out that a few copies need clarification.</li>
+          <li>Some words chosen do not fit into people’s understanding.</li>
+        </ul>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <h2>Gathering feedback for the shipping process</h2>
+        <ul>
+          <li>Some users may not understand the term "Create consignment" when requesting a pickup from the shipping company. We recommend changing the button to "Ready to pick up" to avoid confusion. This way, the users can indicate that their goods are packed and waiting for collection at their warehouse.</li>
+          <li>The modal title "Create consignment" may be unclear for some users who are not familiar with the process. A more descriptive title would be "Prepare consignment for pick up, " explaining the modal's purpose and outcome. This would help users understand what they need to do and what to expect next.</li>
+          <li>Some users suggested showing the product's pick-up location on the modal to help them plan their trip and ensure clarity. This is a valuable suggestion, and we are actively working on implementing it.</li>
+          <li>To avoid confusion, we recommend updating the button label from "Ship consignment" to "Request pick up" to indicate that the goods are waiting for collection at the warehouse.</li>
+          <li>One possible improvement for the form is to include two fields: “Estimated consignment size” and “Actual consignment size”. These fields would allow users to enter their expected and actual package dimensions, which would help them complete the form faster and more accurately.</li>
+          <li>Recommend changing “Dispatch on 03 May 2022” to “Consignment created on 03 May 2022 and ready for pick-up.”</li>
+          <li>"Some users suggested adding a more appealing label element to inform the user about the process of "Pick-up and sending to shipping company"."</li>
+        </ul>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <h2>Gathering feedback for the refund progress:</h2>
+        <ul>
+          <li>Some users may find the "Action refund" dropdown and "Issue refund" buttons confusing as they appear to be the same. To avoid confusion, it is recommended to change the "Action refund" dropdown to display two buttons, "Decline" and "Approve", and convert the "Issue Refund" button into a link instead of a button, making it less prominent.</li>
+          <li>Some users may find it confusing when they land on the "Refund" tab and see subtotal, delivery, and total. Removing this information and only displaying the "Shipping" tab is recommended to avoid confusion.</li>
+          <li>Some users may find the wording "Refund approved" confusing. Changing it to "Refund items" is suggested to align with the previous action button "Refund item" and provide a better user experience.</li>
+        </ul>
+      </CopiesWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Priority Revisions</h1>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <p>After conducting usability testing and gathering feedback, we carefully reviewed and prioritised the recommendations. Revisions were made to address the feedback, ensuring the design met the users' needs and aligned with the project's goals.</p>
+      </CopiesWrapper>
+      <CopiesWrapper>
+       <p><b>View revisions:</b></p>
+       <p><a href="https://www.figma.com/proto/L7wv3hUEQn1t2BtImTSjpg/Portfolio---ArchiPro---Automated-shipping?page-id=4848%3A66955&node-id=4848-66958&viewport=647%2C533%2C0.05&scaling=scale-down-width&starting-point-node-id=4848%3A66958" target="_blank" class="button primary">Shipping process <IconArrowRightLine className=""></IconArrowRightLine></a></p>
+       <p><a href="https://www.figma.com/proto/L7wv3hUEQn1t2BtImTSjpg/Portfolio---ArchiPro---Automated-shipping?page-id=4848%3A66955&node-id=4848-67378&viewport=647%2C533%2C0.05&scaling=scale-down-width&starting-point-node-id=4848%3A67378" target="_blank" class="button primary">Refund process <IconArrowRightLine className=""></IconArrowRightLine></a></p>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/archipro-as/as-final-prototype.webp"></ImageWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Results</h1>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <h2>Reflection</h2>
+        <ul>
+          <li>Throughout this project, I identified an opportunity to streamline our process. Everyone consistently shares ideas, thoughts, and voices with the team, seeking input and assessing feasibility. The team has embraced this approach, enabling us to make changes and push them to produce more efficiently. This has also fostered a stronger relationship between the design team and other stakeholders, ultimately contributing to the project's success.</li>
+          <li>I've experienced considerable growth in my confidence as I learned to defend my design decisions and push back on stakeholder feedback that doesn't have the users' best interests in mind. I learned the importance of representing the user's voice throughout this process. I realised that only people will advocate for the user if I do. Moving forward, I want to remember this when I'm feeling timid to speak up, and I want to have the confidence to assert my position on team decisions.</li>
+        </ul>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/archipro-as/"><Figcaption caption=""></Figcaption></ImageWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Final Design</h1>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <p>After conducting usability tests and making necessary revisions, the design is ready for development. To ensure effective communication with developers, I have redlined and organised my design deliverables using Figma for handoff. I am also prepared to assist with any follow-up questions from the development team to ensure smooth implementation of the design.</p>
+      </CopiesWrapper>
+      <IframeWrapper>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FL7wv3hUEQn1t2BtImTSjpg%2FPortfolio---ArchiPro---Automated-shipping%3Fnode-id%3D4848%253A27313%26t%3DZNWX5bevU1JdIPbr-1" allowfullscreen></iframe>
+      </IframeWrapper>
+    </ProjectSection>
+
   </main>
+  <Footer></Footer>
 </Layout>
