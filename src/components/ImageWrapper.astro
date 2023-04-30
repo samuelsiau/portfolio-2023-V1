@@ -1,0 +1,21 @@
+---
+
+interface Props {
+  imageSource: string;
+}
+
+const { imageSource } = Astro.props;
+const mediaURL = "https://samuelsiau.github.io/p2023-media";
+
+---
+
+<div class="row">
+  <div class="col-12">
+    <figure class="figure">
+      <picture>
+        <img src={mediaURL+imageSource} alt="">
+      </picture>
+      <slot />
+    </figure>
+  </div>
+</div>

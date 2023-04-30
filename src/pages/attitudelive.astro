@@ -1,7 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
 import ProjectHero from "../components/projectHero.astro";
+import IconArrowRightLine from "../components/IconArrowRightLine.astro";
+import ProjectSection from "../components/ProjectSection.astro";
+import CopiesWrapper from "../components/CopiesWrapper.astro";
+import ImageWrapper from "../components/ImageWrapper.astro";
+import Figcaption from "../components/Figcaption.astro";
+import SectionSeparator from "../components/SectionSeparator.astro";
 
 
 const metaTitleName = "Attitude Live | Samuel Siau - Product Designer";
@@ -21,5 +28,223 @@ const metaTitleName = "Attitude Live | Samuel Siau - Product Designer";
       imageLarge="/attitudelive/al-hero-image@1x.webp" 
       imageAlt="attitudelive">
     </ProjectHero>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>The Challenge</h1>
+        <p>AttitudeLive aims to create a responsive website that aligns with its values and offerings to the community, but the current website needs to be updated and reflect AttitudeLive's creative expertise. Additionally, it seeks to solidify its position as the leading source for disability information, discussion and thought leadership in New Zealand, increasing community participation and engagement.</p>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <h1>The Solution</h1>
+        <p>AttitudeLive needs a compelling, user-friendly, and accessible website for delivering information and resources to the disability community in New Zealand, including a custom homepage feed. Designing a WCAG 2.0 AA compliant website with accessibility in mind is crucial for an excellent user experience.</p>
+      </CopiesWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Research</h1>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <p>We didn't have a budget for research in this project, but recognising the importance of catering to our target audience, we knew we had to complete this step. Thankfully, we found valuable resources and guidelines from organisations like the Nielsen Norman Group, which offered techniques for designing this website for users with visual, auditory, motor, and cognitive disabilities who rely on assistive technology. Additionally, we referred to the WCAG 2.0 AA guidelines.</p>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <h2>User interview</h2>
+        <p>We conducted user interviews with company stakeholders and people with disabilities to understand business and users' wants and needs. <br/>
+          Below are some of the answers we received.</p>
+        <p><b>Business:</b></p>
+        <ul>
+          <li>Accessibility to people with disabilities and mobility restrictions.</li>
+          <li>Having the power to configure the content through the website.</li>
+          <li>Raise brand awareness - a site that WOWs.</li>
+          <li>Support and attract funders.</li>
+          <li>Easy management administration CMS.</li>
+          <li>Create user-driven content and crowdsourcing content to build the community.</li>
+        </ul>
+        <p><b>Users:</b></p>
+        <ul>
+          <li>Easy-to-navigate website.</li>
+          <li>Able to increase the website font size for readable purposes.</li>
+          <li>Designing the website for visual, auditory, motor, and cognitive disabilities who rely on assistive technology.</li>
+        </ul>
+      </CopiesWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Define</h1>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <p>After analysing data collected from company stakeholders and individuals with disabilities, we built a list of the website's most critical features, prioritising the needs of both the business and the users.</p>
+        <p>Next, we developed a product feature roadmap incorporating all the essential features identified through our analysis, ensuring the website functions efficiently. It aligns with the project's high-level goals and objectives.</p>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/attitudelive/al-featureroadmap-01@1x.webp"><Figcaption caption="Feature roadmap for Attitude Live."></Figcaption></ImageWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Information Architecture</h1>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <p>parAfter defining the website's features, we created a flow for the main tasks, focusing on developing a customised homepage feed for users, deemed a crucial website functionality.agraph</p>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/attitudelive/al-userflow-01@1x.webp"><Figcaption caption="User flow showing pathways create customise feed and account creation."></Figcaption></ImageWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Sitemap</h1>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <p>We created a sitemap to visualise the site's layout and content, prioritising a concise and straightforward information architecture as it was essential.</p>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/attitudelive/al-sitemap-01@1x.webp"><Figcaption caption="Site map created for Attitude Live."></Figcaption></ImageWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Sketching</h1>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <p>Based on the sitemap and user flow, we started with quick hand-sketching of low-fidelity designs, ensuring that all the features, project goals, and research were included in the initial designs.</p>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/attitudelive/al-low-fidelity-01@1x.webp"><Figcaption caption="Low-fidelity sketches of some key screens."></Figcaption></ImageWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Wireframes</h1>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <p>Once we had a visual direction for the layout, we added more details and precision to the sketches by creating mid-fidelity wireframes. Creating mid-fidelity wireframes helped us focus on visual consistency and hierarchy before applying styles to the design.</p>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/attitudelive/al-mid-fidelity-01@1x.webp"><Figcaption caption="Mid-fidelity wireframes of some key screens."></Figcaption></ImageWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>UI Refinement</h1>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <p>We presented our mid-fidelity wireframes with a clickable prototype in our initial design review with the client. We received confirmation of their feasibility for development and approval for our proposed solutions.</p>
+        <p>We're building a mood board to gather inspiration before creating our design system. Once we agree on the visual aesthetic, we'll establish a design system for consistent development across all screens.</p>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/attitudelive/moonboard-al-01@1x.webp"></ImageWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Key Design Consideration</h1>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <p>After reviewing the WCAG 2.0 guidelines, I created an accessibility checklist, prioritising visual design updates to the UI components.</p>
+        <ul>
+          <li>Make sure the keyboard focus is visible.</li>
+          <li>Minimum contrast ratio of 3.20:1 between text and background.</li>
+          <li>UI elements and graphics must have a contrast ratio of 3:1 against their background.</li>
+          <li>Don't rely solely on colour to present information.</li>
+          <li>Use icons and buttons consistently.</li>
+          <li>Text can be resized by 200% without loss of content or function.</li>
+          <li>Content can be enlarged up to 400% without requiring dimensional scrolling.</li>
+        </ul>
+      </CopiesWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Establishing a design system</h1>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <p>The designer and developer were part of the design process, along with accessibility. Once the proposed designs were approved, we defined essential elements upfront to ensure a fast and consistent design throughout the project, making style changes easier to coordinate later on.</p>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/attitudelive/ds-al-01@1x.webp"></ImageWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Usability Testing</h1>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <p>As a team, we refined the screens, and I created a clickable prototype for usability testing, establishing our primary user testing objectives.</p>
+        <p><b>Testing objective:</b></p>
+        <ul>
+          <li>Observe how participants navigate throughout the website to accomplish their goals.</li>
+          <li>Test and see if participants get to the end of their tasks using different methods.</li>
+          <li>Test to see if the website is user-friendly and easy to navigate.</li>
+          <li>Get feedback from participants on the site's usability.</li>
+        </ul>
+        <p><b>Tasks:</b></p>
+        <ul>
+          <li>Find a button to create a custom feed on the homepage.</li>
+          <li>Find an organisation under the “Sport” category on the directory page.</li>
+          <li>Create an account.</li>
+          <li>Identify which one is “Sponsor” content on the homepage, and click on it.</li>
+          <li>Identify which one is “Watch” content on the homepage, and click on it.</li>
+        </ul>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <h2>Testing Insights</h2>
+        <p>A total of 7 participants completed this usability test. They came to my workplace to do testing. I observed while I could assist at any point. Participants were timed on how quickly they completed those tasks.</p>
+        <p><b>Key finding:</b></p>
+        <ul>
+          <li>All participants found the website pretty easy to navigate.</li>
+          <li>All participants liked that the “Get Started” CTA on Homepage stands out; they clicked on it to create a custom feed.</li>
+          <li>All participants accomplished creating an account.</li>
+          <li>Four participants point out that they dislike scrolling up and down to click the directory category.</li>
+          <li>All participants liked the new UI design.</li>
+          <li>One participant cannot identify the "Sponsor" content on the homepage.</li>
+        </ul>
+        <p><b>Recommendation:</b></p>
+        <ul>
+          <li>Update the user interface of the “Sponsor” card to differentiate other cards.</li>
+          <li>Make the section of the directory category sticky and move from top to left-handed like the sidebar.</li>
+        </ul>
+      </CopiesWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Priority Revisions</h1>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <p>After completing the usability testing, I made revisions based on the recommendations.</p>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/attitudelive/ut-al-01@1x.webp"><Figcaption caption='Refined the layout and placement of the "Sponsor" card to create a clear visual hierarchy and make it visually appealing and easily recognisable to users.'></Figcaption></ImageWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>SectionTitle</h1>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <h2>Title</h2>
+        <p>paragraph</p>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/attitudelive/"><Figcaption caption=""></Figcaption></ImageWrapper>
+    </ProjectSection>
   </main>
+  <Footer></Footer>
 </Layout>

@@ -1,0 +1,13 @@
+---
+interface Props {
+  caption: string;
+}
+
+const { caption } = Astro.props;
+---
+
+<div class="row">
+  <div class="col-12 col-6-lg figcaption-push-left">
+    <figcaption>{caption}</figcaption>
+  </div>
+</div>

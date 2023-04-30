@@ -1,10 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navigation from "../components/Navigation.astro";
+import Footer from '../components/Footer.astro';
 import ProjectHero from "../components/projectHero.astro";
 import IconArrowRightLine from "../components/IconArrowRightLine.astro";
-import IconArrowRightUpLine from "../components/IconArrowRightUpLine.astro";
-
+import ProjectSection from "../components/ProjectSection.astro";
+import CopiesWrapper from "../components/CopiesWrapper.astro";
+import ImageWrapper from "../components/ImageWrapper.astro";
+import Figcaption from "../components/Figcaption.astro";
+import SectionSeparator from "../components/SectionSeparator.astro";
 
 const metaTitleName = "JVNZ - Storybook For Me | Samuel Siau - Product Designer";
 
@@ -24,5 +28,222 @@ const metaTitleName = "JVNZ - Storybook For Me | Samuel Siau - Product Designer"
       imageAlt="storybookforme">
       <div class="cta" slot="LinkToLiveSite"><a class="button link responsive" href="https://storybookforme.com.au/" target="_blank">View live site <IconArrowRightLine className=""></IconArrowRightLine></a></div>
     </ProjectHero>
+  
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>The Challenge</h1>
+        <p>JVNZ aims to expand its business by creating a website that offers personalised children's books using pre-written and pre-illustrated stories. The final words and pictures of the story will be composed based on specific variables chosen by the customer.</p>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <h1>The Solution</h1>
+        <p>Design a responsive e-commerce website that is easy to use and allows customers to browse through all different books and details, fill out specific variables, and personalise children's books.</p>
+      </CopiesWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Research</h1>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <h2>Stakeholder interview</h2>
+        <p>We began the design process by learning it step-by-step and performing one task at a time. Our first step was conducting a stakeholder interview to understand the client's problem, business goals/objectives, target audience, measures of success, and competitors.</p>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <h2>Business question</h2>
+        <ul>
+          <li>What is the obstacle related to personalised children's books, and why are so few trusted online stores selling them?</li>
+          <li>Who is the customer segment interested in personalised children's books, children or parents?</li>
+          <li>What is the measure of success in your business? Is it based on the number of customers who make orders?</li>
+          <li>What is the KPI (Key Performance Indicator) for your business? Is it the number of orders?</li>
+          <li>What features do you want in your ecommerce website for personalised children's books?</li>
+          <li>How are we better than our competitors?</li>
+          <li>Why would someone buy your product (do they buy it for a gift or for themself)?</li>
+        </ul>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <h2>User interview</h2>
+        <p>To better understand the pain points and goals of those who shop for personalised children's books online, I conducted user interviews to identify target users and understand their needs. These interviews gave us an in-depth understanding of their values, perceptions, and experiences.</p>
+        <p><b>Key finding:</b></p>
+        <ul>
+          <li>Users need an easy-to-navigate website.</li>
+          <li>Users want to easy to browse through all the different books and detail.</li>
+          <li>Users need alternative ways of paying(PayPal).</li>
+          <li>Users want to free shipping and returns.</li>
+          <li>Users need to personalise children's books with ease.</li>
+          <li>Users want to preview their personalise children's books.</li>
+          <li>Users want to faster checkout process.</li>
+        </ul>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <h2>Competitor research</h2>
+        <p>To gain inspiration for our e-commerce website, we identified the main competitors in the personalised children's books market. We gathered helpful information that assisted us with the ideation stage by identifying common features across these sites and potential opportunities for Storybook For Me to differentiate itself.</p>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/storybookforme/sfm-competitive-analysis-01.webp"><Figcaption caption="Findings from competitive and market analysis."></Figcaption></ImageWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Ideation</h1>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <p>We now have a clear understanding of what we are designing and why. With better insights about who we are designing for, we are ready to turn those inputs into a usable product that aligns with our business goals and meets users' needs.</p>
+        <p>With the project goals in focus, we created a product feature roadmap that outlines the features in order of priority, considering their development, investment, and importance to business and user goals.</p>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/storybookforme/sfm-feature-roadmap-01.webp"><Figcaption caption="Feature roadmap for Storybook For Me."></Figcaption></ImageWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Information Architecture</h1>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <p>We created a site map to define the overall structure of the website.</p>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/storybookforme/sfm-sitemap-01.webp"><Figcaption caption="Site map created for Storybook For Me."></Figcaption></ImageWrapper>
+      <CopiesWrapper>
+        <p>Before proceeding to the design phase, we identified the main flow that the user would follow by creating a user flow. We began by considering the user's journey when shopping online and used this information to create a detailed user flow.</p>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/storybookforme/sfm-userflow-01.webp"><Figcaption caption="Sample user flow showing pathways for browsing and purchasing a book."></Figcaption></ImageWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Wireframes</h1>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <p>After organising all our insights from the ideation stage, we began designing the website to experiment with our ideas and thoughts. We started the process by sketching our initial wireframes and then progressed to creating low-fidelity wireframes.</p>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/storybookforme/sfm-low-fidelity-01.webp"><Figcaption caption="Low-fidelity sketches of homepage."></Figcaption></ImageWrapper>
+      <CopiesWrapper>
+        <p>After deciding on the visual direction of the layout we wanted to pursue, our goal was to focus on the buying process, from when the user arrives at the homepage to find a book they would like to purchase to the checkout. We began wireframing some key pages informed by the user flow.</p>  
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/storybookforme/sfm-mid-fidelity-01.webp"><Figcaption caption="Mid-fidelity wireframes of some key screens."></Figcaption></ImageWrapper>
+      <CopiesWrapper>
+        <p>I created a mood board for inspiration before creating our design system.</p>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/storybookforme/moodboard-storybookforme.webp"></ImageWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Design with the system</h1>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <p>Once we agreed with the visual feel, we decided on a design system to ensure consistency across all screens and ease the development process.</p>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/storybookforme/StorybookForMeDS-01.webp"><Figcaption caption="I created high-fidelity wireframes and created a clickable prototype to prepare for testing."></Figcaption></ImageWrapper>
+      <CopiesWrapper>
+        <p>I created high-fidelity wireframes and created a clickable prototype to prepare for testing.</p>
+      </CopiesWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Usability Testing</h1>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <p>Before conducting the testing, we focused on creating two scenarios a user might go through, each with a task to complete. We created a usability test plan and checklist that included all the information and goals we wanted to achieve.</p>
+        <p><b>Testing objective:</b></p>
+        <ul>
+          <li>Tell me what this website does.</li>
+          <li>Observe how participants navigate throughout the new site to accomplish their goals.</li>
+          <li>Test to see if the website is user-friendly and easy to navigate.</li>
+          <li>Get feedback from participants on the site's usability.</li>
+          <li>Identify any points of confusion during the whole process of purchasing an item.</li>
+        </ul>
+        <p><b>Tasks:</b></p>
+        <ul>
+          <li>Find one book, fill out a specific variable, and preview the personalised book.</li>
+          <li>Preview the personalised book, add it to the cart, and continue to checkout.</li>
+        </ul>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <h2>Testing Insights</h2>
+        <p>A total of 5 participants completed this usability test, three women and two men. The participants range from ages 30 to 50, and they are all parents who shop online to buy the item for their kids.</p>
+        <p><b>Key Insights:</b></p>
+        <ul>
+          <li>All participants can tell this is an e-commerce website selling personalised children's books.</li>
+          <li>All participants navigated through the site successfully.</li>
+          <li>All participants completed finding a book, adding it to the cart and continuing checkout.</li>
+          <li>20% of participants liked the preview of their personalised book.</li>
+          <li>20% of participants liked the fill in the specific variable to personalise their book.</li>
+        </ul>
+        <p><b>Pain points:</b></p>
+        <ul>
+          <li>Users want the form to be placed above the fold so that they can easily fill in the personalised book variables.</li>
+          <li>The information provided on the home and book detail pages must be more comprehensive.</li>
+          <li>Users needed to realise they could edit the specific variable in the personalised book preview below the fold.</li>
+        </ul>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/storybookforme/feedback-bookdetail-v1@1x.webp"></ImageWrapper>
+      <ImageWrapper imageSource="/storybookforme/feedback-previewbook-v1@1x.webp"></ImageWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Priority Revisions</h1>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <p>After completing the usability testing, we went back and made revisions to the participants' top pain points.</p>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/storybookforme/result-bookdetail-v1@1x.webp"></ImageWrapper>
+      <ImageWrapper imageSource="/storybookforme/result-previewbook-v1@1x.webp"></ImageWrapper>
+      <CopiesWrapper>
+        <p>After iterating on the pain points I gathered, I tested again to see if these changes improved usability.</p>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/storybookforme/result2-bookdetail-v1@1x.webp"></ImageWrapper>
+      <ImageWrapper imageSource="/storybookforme/result2-previewbook-v1@1x.webp"></ImageWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Results</h1>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <h2>Outcome</h2>
+        <p>We successfully shipped and deployed this project before Christmas, and the client received significant consumer orders. The best part is that we received feedback that the personalised book e-commerce website was easy to navigate and quick to checkout.</p>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <h2>Reflection</h2>
+        <ul>
+          <li>After completing my mid-fidelity wireframes, I intended to conduct a round of prototype testing using those screens. However, I could only gather some of the required participants for the testing, which caused a delay in the turnaround time. As a result, I decided to wait and conduct the usability test after finishing my high-fidelity wireframes. Looking back, if I had conducted testing earlier, I could have identified user pain points sooner and saved time during the creation of higher-fidelity wireframes.</li>
+          <li>This was my second e-commerce design project in which I applied design thinking. I enjoyed the process and gained valuable experience from conducting user interviews and usability testing, which allowed me to collect direct user input and uncover usability issues. Overall, the project gave me a deeper understanding of the UX design process and the e-commerce industry.</li>
+        </ul>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <div>
+          <a href="https://storybookforme.com.au/" class="button primary" target="_blank">View live site <IconArrowRightLine className=""></IconArrowRightLine></a>
+        </div>
+      </CopiesWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Design Highlights</h1>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/storybookforme/sfm-final-01.webp"></ImageWrapper>
+      <ImageWrapper imageSource="/storybookforme/sfm-final-02.webp"></ImageWrapper>
+      <ImageWrapper imageSource="/storybookforme/sfm-final-03.webp"></ImageWrapper>
+    </ProjectSection>
+
   </main>
+  <Footer></Footer>
 </Layout>

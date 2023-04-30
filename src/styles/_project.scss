@@ -1,0 +1,87 @@
+// Container For Text
+// ----------------
+
+.copies-push-left,
+.figcaption-push-left {
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    margin-right: calc(8.3333333333% + 24px);
+  }
+}
+
+.haha {
+  background: black;
+  color: white;
+}
+
+.projectSection {
+  padding-top: 5.6rem;
+  padding-bottom: 5.6rem;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    @media screen and (min-width: 900px) {
+      padding-top: 12rem;
+      padding-bottom: 12rem;
+      gap: 4.8rem;
+    }
+  }
+
+  .sectionCopies {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  h1 {
+    @include headlineLarge;
+
+    @media screen and (min-width: 900px) {
+      @include displayMedium;
+    }
+  }
+
+  p {
+    @include bodyXLarge;
+    @media screen and (min-width: 900px) {
+      @include bodyXXLarge;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    li {
+      @include bodyXLarge;
+      @media screen and (min-width: 900px) {
+        @include bodyXXLarge;
+      }
+    }
+  }
+
+  figure.figure {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    figcaption {
+      @include bodySmall;
+      color: var(--color-primary_03);
+      text-align: center;
+      @media screen and (min-width: 900px) {
+        text-align: left;
+      }
+      
+    }
+  }
+}
+
+.projectSectionSeparator {
+  hr {
+    margin: 0;
+    background-color: var(--color-primary_01);
+  }
+}
+
