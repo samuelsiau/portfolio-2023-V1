@@ -76,10 +76,20 @@ const { title } = Astro.props;
 
 			gtag('config', 'G-2GZ9350WYG');
 		</script>
-		
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-MVZMWJ8');</script>
+		<!-- End Google Tag Manager -->
 
 	</head>
 	<body>
+			<!-- Google Tag Manager (noscript) -->
+			<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVZMWJ8"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
 		<svg width="0" height="0" style="display:none">
 			<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="arrow-right-line">
 				<path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
@@ -106,4 +116,5 @@ const { title } = Astro.props;
 		<script is:inline src="https://unpkg.com/split-type"></script> -->
 		<script src="../scripts/local.js"></script>
 	</body>
+
 </html>
