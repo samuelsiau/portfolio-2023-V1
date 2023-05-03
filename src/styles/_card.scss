@@ -30,6 +30,7 @@
 
   @media screen and (min-width: 1200px) {
     &:hover {
+      .title,
       .cta {
         text-decoration: underline;
         text-decoration-thickness: 0.1rem;
