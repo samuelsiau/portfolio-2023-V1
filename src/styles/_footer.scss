@@ -42,15 +42,21 @@
       a {
         display: block;
         @include bodyLarge;
+        transform: scale(1);
+        transition: all 0.3s ease;
+        &:active {
+          transform: scale(0.9);
+        }
 
         @media screen and (min-width: 900px) {
           @include bodyXXLarge;
+        }
+        @media screen and (min-width: 1200px) {
           &:hover {
-            text-decoration: line-through;
+            text-decoration: underline;
             text-decoration-thickness: 0.1rem;
           }
         }
-        
       }
     }
   }
