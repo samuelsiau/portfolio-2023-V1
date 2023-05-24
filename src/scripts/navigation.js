@@ -4,7 +4,7 @@ const showAnim = gsap.from(navbar, {
   yPercent: -100,
   paused: true,
   duration: 0.3,
-  ease: "none"
+  ease: "circ.inOut"
 }).progress(1);
 
 ScrollTrigger.create({
@@ -12,11 +12,6 @@ ScrollTrigger.create({
   end: 99999,
   onUpdate: (self) => {
     self.direction === -1 ? showAnim.play() : showAnim.reverse();
-    // if(self.direction === -1) {
-    //   showAnim.play();
-    // } else {
-    //   showAnim.reverse();
-    // }
   },
   toggleClass: {className: 'scrolled', targets: navbar}
 });
