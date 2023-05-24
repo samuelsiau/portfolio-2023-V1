@@ -10,7 +10,8 @@
   left: 0;
   right: 0;
   z-index: 10;
-  will-change: transform;
+  transition: background 0.2s ease;
+  will-change: transform, background;
 
   .nav-wrapper__inner {
     display: flex;
@@ -23,9 +24,7 @@
   }
 
   &.scrolled {
-    .nav-wrapper__inner {
-      background-color: var(--color-white);
-    }
+    background-color: var(--color-white);
   }
 
   @media screen and (min-width: 900px) {
