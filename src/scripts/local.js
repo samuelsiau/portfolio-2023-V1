@@ -1,9 +1,9 @@
 // gsap.registerPlugin(CustomEase);
 // gsap.registerPlugin(ScrollToPlugin);
 
-const header = document.querySelector(".nav-wrapper");
-const headroom = new Headroom(header);
-headroom.init();
+// const header = document.querySelector(".nav-wrapper");
+// const headroom = new Headroom(header);
+// headroom.init();
 
 // const heroHeading = document.querySelector('.animateHeroText'); 
 // const splitType = new SplitType(heroHeading, {types: 'word'});
@@ -47,16 +47,31 @@ headroom.init();
 //   },
 // });
 
-const btnBacktoTop1 = document.querySelector(".backtotop1");
-btnBacktoTop1.addEventListener("click", function() {
-  window.scrollTo({top: 0, behavior: 'smooth'});
-});
+// const btnBacktoTop1 = document.querySelector(".backtotop1");
+// btnBacktoTop1.addEventListener("click", function() {
+//   window.scrollTo({top: 0, behavior: 'smooth'});
+// });
 
 
-const btnBacktoTop2 = document.querySelector(".backtotop2");
-btnBacktoTop2.addEventListener("click", function() {
-  window.scrollTo({top: 0, behavior: 'smooth'});
-});
+// const btnBacktoTop2 = document.querySelector(".backtotop2");
+// btnBacktoTop2.addEventListener("click", function() {
+//   window.scrollTo({top: 0, behavior: 'smooth'});
+// });
+
+const btnBacktoTop1 = $('.backtotop1');
+const btnBacktoTop2 = $('.backtotop2');
+
+const scrolltotopgsap = gsap.to(window, {
+  duration: 0.2,
+  scrollTo: '0'
+})
+
+btnBacktoTop2.click(function(){
+  scrolltotopgsap.restart();
+})
+
+
+
 
 const currentYear = new Date().getFullYear();
 const currentYearText = document.querySelector("#currentyear");
