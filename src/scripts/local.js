@@ -5,7 +5,7 @@ console.log(btnBacktoTop2);
 console.log(btnBacktoTop1);
 
 const backToTopAnimation = gsap.to(window, {
-  duration: 0.1,
+  duration: 0.2,
   scrollTo: "0",
   ease: "none"
 })

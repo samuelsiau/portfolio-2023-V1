@@ -2,10 +2,9 @@ const navbar = $('.nav-wrapper');
 
 const showAnim = gsap.from(navbar, { 
   yPercent: -100,
-  paused: true,
-  duration: 0.3,
+  duration: 0.4,
   ease: "circ.inOut"
-}).progress(1);
+});
 
 ScrollTrigger.create({
   start: "top top",
