@@ -10,9 +10,10 @@
   left: 0;
   right: 0;
   z-index: 10;
+  transform: translate(0px, 0px);
   transition: background 0.2s ease;
   will-change: transform, background;
-
+  
   .nav-wrapper__inner {
     display: flex;
     flex-direction: column;

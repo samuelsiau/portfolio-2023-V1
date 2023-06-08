@@ -1,9 +1,6 @@
 const btnBacktoTop1 = $('.backtotop1');
 const btnBacktoTop2 = $('.backtotop2');
 
-console.log(btnBacktoTop2);
-console.log(btnBacktoTop1);
-
 const backToTopGSAP = gsap.to(window, {
   duration: 0.2,
   scrollTo: 0,

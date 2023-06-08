@@ -4,7 +4,7 @@ const showAnim = gsap.from(navbar, {
   yPercent: -100,
   duration: 0.4,
   ease: "circ.inOut"
-});
+}).progress(1);
 
 ScrollTrigger.create({
   start: "top top",
