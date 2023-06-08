@@ -1,62 +1,23 @@
-// gsap.registerPlugin(CustomEase);
-// gsap.registerPlugin(ScrollToPlugin);
+const btnBacktoTop1 = $('.backtotop1');
+const btnBacktoTop2 = $('.backtotop2');
 
-const header = document.querySelector(".nav-wrapper");
-const headroom = new Headroom(header);
-headroom.init();
+console.log(btnBacktoTop2);
+console.log(btnBacktoTop1);
 
-// const heroHeading = document.querySelector('.animateHeroText'); 
-// const splitType = new SplitType(heroHeading, {types: 'word'});
+const backToTopGSAP = gsap.to(window, {
+  duration: 0.2,
+  scrollTo: 0,
+  ease: "none"
+})
 
-// $('.animateHeroText .line').wrap('<div class="overflow-hidden"></div>');
+btnBacktoTop2.on("click",function(){
+  backToTopGSAP.restart();
+})
 
-// const homeHeroText = ScrollReveal().reveal('.heroHome .word', {
-//   distance: '50px',
-//   interval: 120
-// });
+btnBacktoTop1.click(function(){
+  backToTopGSAP.restart();
+})
 
-
-// CustomEase.create("hop", "0.5, 0, 0, 1");
-
-// const homeHeroText = gsap.from('.heroHome .line', {
-//   opacity: 0,
-//   y: 50,
-//   duration: 1.2,
-//   ease: "hop",
-//   stagger: { amount: 1.2 },
-// });
-
-// const animateHomeCTA =  gsap.from('.heroHome .cta',{
-//   opacity: 0,
-//   y: 50,
-//   duration: 1.2,
-//   ease: "hop"
-// })
-
-// animateHomeCTA.pause();
-
-// function displayCTAFunction() {
-//   animateHomeCTA.play();
-// }
-
-// const animatedCard = ScrollReveal().reveal('.card .card-animate', { 
-//   distance: '50px',
-//   interval: 120,
-//   viewOffset: {
-//     bottom: 100,
-//   },
-// });
-
-const btnBacktoTop1 = document.querySelector(".backtotop1");
-btnBacktoTop1.addEventListener("click", function() {
-  window.scrollTo({top: 0, behavior: 'smooth'});
-});
-
-
-const btnBacktoTop2 = document.querySelector(".backtotop2");
-btnBacktoTop2.addEventListener("click", function() {
-  window.scrollTo({top: 0, behavior: 'smooth'});
-});
 
 const currentYear = new Date().getFullYear();
 const currentYearText = document.querySelector("#currentyear");

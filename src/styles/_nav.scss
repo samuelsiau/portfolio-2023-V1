@@ -10,11 +10,21 @@
   left: 0;
   right: 0;
   z-index: 10;
-  transition: linear 0.4s;
-  will-change: backgroudn-color;
+  transition: background 0.2s ease;
+  will-change: transform, background;
+
+  .nav-wrapper__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    will-change: background-color;
+  }
 
   &.scrolled {
-    background-color: black;
+    background-color: var(--color-white);
   }
 
   @media screen and (min-width: 900px) {
@@ -72,19 +82,4 @@
       
     }
   }
-}
-
-.headroom {
-  will-change: transform;
-  transition: all 0.3s linear;
-}
-.headroom--pinned {
-  transform: translateY(0%);
-}
-.headroom--unpinned {
-  transform: translateY(-100%);
-}
-
-.headroom--not-top {
-  background-color: var(--color-white);
 }
