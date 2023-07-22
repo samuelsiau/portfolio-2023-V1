@@ -23,7 +23,7 @@ const { href, client, title, imageLarge, imageSmall, imageAlt } = Astro.props;
 	<div class="card__image card-animate">
 		<picture>
 			<source media="(min-width:900px)" srcset={mediaURL+imageLarge}>
-			<img src={mediaURL+imageSmall} alt={imageAlt}>
+			<img src={mediaURL+imageSmall} alt={imageAlt} loading="lazy">
 		</picture>
 	</div>
 </a>
