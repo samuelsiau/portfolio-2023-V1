@@ -1,0 +1,148 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+import ProjectHero from "../components/projectHero.astro";
+import IconArrowRightLine from "../components/IconArrowRightLine.astro";
+import ProjectSection from "../components/ProjectSection.astro";
+import CopiesWrapper from "../components/CopiesWrapper.astro";
+import ImageWrapper from "../components/ImageWrapper.astro";
+import Figcaption from "../components/Figcaption.astro";
+import SectionSeparator from "../components/SectionSeparator.astro";
+import IframeWrapper from "../components/IframeWrapper.astro";
+
+const metaTitleName = "ArchiPro - Building ARIA Design System | Samuel Siau - Product Designer";
+---
+
+<Layout title={metaTitleName}>
+  <Navigation></Navigation>
+  <main class="layout">
+    <ProjectHero 
+      title="Building a Design System" 
+      client="ArchiPro" 
+      completion="---" 
+      role="As the UX/UI Designer for the project, I was responsible for expanding and managing the design system with the team. I collaborated with the design team and engineering team throughout the project." 
+      team="Mark Kiewiet(Head of Design), Jerry Li(Product Designer), Jason Liao(Engineer), Marwan Fikrat(Engineer)" 
+      imageSmall="/archipro-aria/aria-hero-image@0.5x.webp" 
+      imageLarge="/archipro-aria/aria-hero-image@1x.webp" 
+      imageAlt="Aria Design System">
+    </ProjectHero>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>The Challenge</h1>
+        <p>In mid-2022, the redesign ArchiPro platform UI was completed and signed off. However, the new UI ArchiPro platform needed a formalised design system and a centralised system for designers and developers to access resources.</p>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <h2>What Is a Design System?</h2>
+        <p>A Design System is a systematic approach to product development complete with guidelines, processes, components, and code. It is a single source of truth for teams that simplifies product creation, testing, and development and ensures consistency across different pages and channels.</p>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <h2>Why We Need a Design System?</h2>
+        <p>We found all the different styling variations, colours, font sizes, and spacing values in the latest UI ArchiPro platform in the Figma file are <b>conflicting UI</b>, <b>inconsistencies across the pages</b>, and <b>duplication of standard components</b>. This created inefficiencies for each team, inconsistencies within our platform, <b>pressure for agile solutions</b>, and <b>potentially siloed teams working with disjointed communication</b>.</p>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <h2>How To Develop a Design System?</h2>
+        <p>Developing a design system is a collaborative effort that involves everyone on the team, including designers, developers, stakeholders, and brands. As the designer responsible for the design system, I gather and consolidate all stakeholders' input and create a unified platform to house this valuable information.</p>
+        <p>By creating a centralised design system, we aimed to:</p>
+        <ul>
+          <li>Align our teams by giving them a more structured and guided way to build products.</li>
+          <li>Saving a lot of time, our design and development process with a ready-made library and patterns team can create and test the layout.</li>
+          <li>Reducing complexity and ambiguity.</li>
+          <li>Improve brand perception and user trust through consistent experiences that work for everyone and allow users to accomplish their goals.</li>
+        </ul>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <h2>Where To Start?</h2>
+        <p>We recognised that this project would demand substantial resources, careful planning, and significant time commitments. However, we were confident that this endeavour was a justified long-term investment, benefiting our company, brand standards, and, most importantly, our valued customers.</p>
+        <p>We ran the design sprint and process following steps by creating a design system.</p>
+        <ol>
+          <li>Find all styles of the new UI pages in Figma.</li>
+          <li>Find all the components of the new UI pages in Figma.</li>
+          <li>Define the layout and the spacing.</li>
+          <li>Creation of Styles. Colour, text styles, shadow, etc.</li>
+          <li>Creation of Components: button, input, dropdown, modals etc.</li>
+          <li>Build Screens: mobile, tablet and responsive desktop.</li>
+          <li>Document the usage of styles and components in Figma to share it with stakeholders and developers.</li>
+          <li>Developer to create styles and components for the Storybook.</li>
+          <li>Developers to implement styles and components to the platform.</li>
+          <li>Test and Launch.</li>
+        </ol>
+      </CopiesWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>The Design System anatomy</h1>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <h3>Colours</h3>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/archipro-aria/aria-wf-01.webp"></ImageWrapper>
+      <CopiesWrapper>
+        <h3>Typography</h3>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/archipro-aria/aria-wf-02.webp"></ImageWrapper>
+      <CopiesWrapper>
+        <h3>Miscellaneous Styles</h3>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/archipro-aria/aria-wf-03.webp"></ImageWrapper>
+      <CopiesWrapper>
+        <h3>Spacing Grid and Layout</h3>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/archipro-aria/aria-wf-04.webp"></ImageWrapper>
+      <CopiesWrapper>
+        <h3>Components</h3>
+        <p>List of components:</p>
+        <ul>
+          <li>Icons</li>
+          <li>Buttons</li>
+          <li>Inputs</li>
+          <li>Dropdown menus</li>
+          <li>Tags</li>
+          <li>Avatars</li>
+          <li>Tooltips</li>
+          <li>Checkboxes, Radios and Switches</li>
+          <li>Toasts</li>
+          <li>Cards</li>
+          <li>Modals</li>
+          <li>Others</li>
+        </ul>
+      </CopiesWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Some Screenshots Document the Usage of Styles and Components</h1>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/archipro-aria/aria-doc-screen-01@1x.webp"></ImageWrapper>
+      <ImageWrapper imageSource="/archipro-aria/aria-doc-screen-02@1x.webp"></ImageWrapper>
+      <ImageWrapper imageSource="/archipro-aria/aria-doc-screen-03@1x.webp"></ImageWrapper>
+      <ImageWrapper imageSource="/archipro-aria/aria-doc-screen-04@1x.webp"></ImageWrapper>
+      <ImageWrapper imageSource="/archipro-aria/aria-doc-screen-05@1x.webp"></ImageWrapper>
+      <ImageWrapper imageSource="/archipro-aria/aria-doc-screen-06@1x.webp"></ImageWrapper>
+      <ImageWrapper imageSource="/archipro-aria/aria-doc-screen-07@1x.webp"></ImageWrapper>
+      <ImageWrapper imageSource="/archipro-aria/aria-doc-screen-08@1x.webp"></ImageWrapper>
+      <ImageWrapper imageSource="/archipro-aria/aria-doc-screen-09@1x.webp"></ImageWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>What's next?</h1>
+        <p>In December 2022, our work stopped due to company restructuring, and teams were effectively laid off. The design system is an ongoing project. We iterate, change and learn a lot in the process. We have a set of essential components ready. Anyway, any team moving forward can easily pick up the adoption of this system.</p>
+        <p>Some stakeholders are reluctant to create a design system because it means time and money, but the value is revealed when in place. The product or design team won't need to develop over-and-over components; they will be able to focus on what matters the most. All groups will use the source of truth, avoiding the fact that each team is recreating the same UI elements, which will reduce time and save money.</p>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <h2>Reflection</h2>
+        <p>It was an 'Everest' challenge. I learned much about resource management, coordinating moving parts, and syncing with developers. I am proud I convinced management to give the design system initiative a well-deserved try.</p>
+      </CopiesWrapper>
+    </ProjectSection>
+  </main>
+  <Footer></Footer>
+</Layout>

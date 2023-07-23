@@ -17,13 +17,15 @@
 .projectSection {
   padding-top: 5.6rem;
   padding-bottom: 5.6rem;
+  @media screen and (min-width: 900px) {
+    padding-top: 8.0rem;
+    padding-bottom: 8.0rem;
+  }
   .container {
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
     @media screen and (min-width: 900px) {
-      padding-top: 12rem;
-      padding-bottom: 12rem;
       gap: 4.8rem;
     }
   }
@@ -49,7 +51,8 @@
     }
   }
 
-  ul {
+  ul,
+  ol {
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
