@@ -1,0 +1,29 @@
+---
+import IconArrowRightLine from './IconArrowRightLine.astro';
+const mediaURL = "https://samuelsiau.github.io/p2023-media/";
+
+export interface Props {
+	client: string;
+	title: string;
+	href: string;
+	imageLarge: string;
+	imageSmall: string;
+	imageAlt: string;
+}
+
+const { href, client, title, imageLarge, imageSmall, imageAlt } = Astro.props;
+---
+
+<a href={href} class="card2">
+  <div class="card__image2 card-animate">
+		<picture>
+			<source media="(min-width:900px)" srcset={mediaURL+imageLarge}>
+			<img src={mediaURL+imageSmall} alt={imageAlt} loading="lazy">
+		</picture>
+	</div>
+	<div class="card__content2 card-animate">
+		<p class="client">{client}</p>
+		<p class="title">{title}</p>
+		<div class="cta">View case study <IconArrowRightLine className=""></IconArrowRightLine></div>
+	</div>
+</a>
