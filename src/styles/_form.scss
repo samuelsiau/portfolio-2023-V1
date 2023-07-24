@@ -223,6 +223,12 @@ button:active:not(:disabled) {
     transition: all 0.3s ease;
     fill: var(--color-primary_01);
   }
+
+  .arrow-right {
+    transform: translateX(0);
+    will-change: transform;
+    transition: transform 0.3s ease;
+  }
 }
 
 .button.primary {
@@ -241,9 +247,19 @@ button:active:not(:disabled) {
   gap: 8px;
   @include buttonBodyLarge;
 
+  .arrow-right {
+    transform: translateX(0);
+    will-change: transform;
+    transition: transform 0.3s ease;
+  }
+
   &:hover {
     text-decoration: underline;
     text-decoration-thickness: 0.1rem;
+
+    .arrow-right {
+      transform: translateX(0.8rem);
+    }
   }
 }
 
@@ -274,6 +290,9 @@ button:active:not(:disabled) {
   .icon {
     fill: var(--color-primary_01);
   }
+  .arrow-right {
+    transform: translateX(0.8rem);
+  }
 }
 
 .button.outline.primary:hover {
@@ -282,5 +301,8 @@ button:active:not(:disabled) {
   border-color: var(--color-primary_01);
   .icon {
     fill: var(--color-white);
+  }
+  .arrow-right {
+    transform: translateX(0.8rem);
   }
 }

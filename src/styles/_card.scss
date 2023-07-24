@@ -157,10 +157,13 @@
 
   @media screen and (min-width: 1200px) {
     &:hover {
-      .title,
       .cta {
         text-decoration: underline;
         text-decoration-thickness: 0.1rem;
+      }
+
+      .arrow-right {
+        transform: translateX(0.8rem);
       }
   
       picture {
@@ -174,6 +177,7 @@
 .card__image2 {
   flex: 0 0 auto;
   width: 100%;
+  overflow: hidden;
   picture {
     display: block;
     transform: scale(1);
@@ -225,6 +229,12 @@
     @media screen and (min-width:900px) {
       @include buttonBodyLarge;
     }
+  }
+
+  .arrow-right {
+    transform: translateX(0);
+    will-change: transform;
+    transition: transform 0.3s ease;
   }
 }
 
