@@ -1,133 +1,6 @@
-// .card-groups {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: flex-start;
-//   gap: 5.6rem;
-//   padding: 5.6rem 0;
-//   max-width: 144rem;
-//   margin: 0 auto;
-
-//   @media screen and (min-width: 900px) {
-//     max-width: 144rem+2.4rem+2.4rem;
-//     padding: 8.0rem 2.4rem;
-//     gap: 8rem;
-//   }
-  
-// }
-
-// .card {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: flex-start;
-//   padding: 0;
-//   gap: 2.4rem;
-
-//   @media screen and (min-width: 900px) {
-//     flex-direction: row;
-//     align-items: flex-start;
-//     gap: 4.8rem;
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     &:hover {
-//       .title,
-//       .cta {
-//         text-decoration: underline;
-//         text-decoration-thickness: 0.1rem;
-//       }
-  
-//       picture {
-//         transform: scale(1.02);
-//       }
-//     }
-//   }
-  
-// }
-
-
-// .card__content {
-//   padding-left: 2.4rem;
-//   padding-right: 2.4rem;
-//   flex: 0 0 auto;
-//   width: 100%;
-
-//   @media screen and (min-width: 900px) {
-//     padding-left: 0;
-//     padding-right: 0;
-//     flex: 0 0 auto;
-//     width: 33.33333333%;
-//   }
-  
-
-//   .client {
-//     @include font-mono;
-//     @include labelLarge;
-//     margin-bottom: 0.8rem;
-//     text-transform: uppercase;
-//   }
-
-//   .title {
-//     @include font-display;
-//     @include headlineSmall;
-//     margin-bottom: 1.6rem;
-//     @media screen and (min-width: 1200px) {
-//       @include displaySmall;
-//       margin-bottom: 4rem;
-//     }
-    
-//   }
-
-//   .cta {
-//     display: inline-flex;
-//     flex-direction: row;
-//     justify-content: center;
-//     align-items: center;
-//     @include buttonBodySmall;
-//     gap: 8px;
-
-//     @media screen and (min-width:900px) {
-//       @include buttonBodyLarge;
-//     }
-//   }
-// }
-
-// .card__image {
-//   flex: 0 0 auto;
-//   width: 100%;
-//   picture {
-//     display: block;
-//     transform: scale(1);
-//     transition: transform 0.3s ease;
-//   }
-
-//   @media screen and (min-width: 900px) {
-//     flex: 0 0 auto;
-//     width: calc(66.66666667% - 4.8rem);
-//   }
-  
-// }
-
-.recentwork {
-  padding: 5.6rem 0;
-  @media screen and (min-width: 900px) {
-    padding: 8rem 0;
-  }
-  
-}
-.recentworkTitle {
-  @include headlineMedium;
-  margin-bottom: 2.4rem;
-  @media screen and (min-width: 900px) {
-    margin-bottom: 3.2rem;
-    @include displayMedium;
-  }
-  
-}
-
-.card-groups2 {
+.card-groups {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: flex-start;
   gap: 5.6rem;
   max-width: 144rem;
@@ -136,37 +9,33 @@
   @media screen and (min-width: 900px) {
     max-width: 144rem+2.4rem+2.4rem;
     padding: 0 2.4rem;
-    gap: 6.4rem 4.8rem;
+    gap: 6.4rem;
   }
   
 }
 
-
-.card2 {
+.card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
-  gap: 1.6rem;
+  gap: 2.4rem;
 
   @media screen and (min-width: 900px) {
+    flex-direction: row;
     align-items: flex-start;
-    gap: 2.4rem;
-    max-width: calc(50% - 2.4rem);
+    gap: 4.8rem;
   }
 
   @media screen and (min-width: 1200px) {
     &:hover {
+      .title,
       .cta {
         text-decoration: underline;
         text-decoration-thickness: 0.1rem;
       }
-
-      .arrow-right {
-        transform: translateX(0.8rem);
-      }
   
-      picture {
+      img {
         transform: scale(1.02);
       }
     }
@@ -174,19 +43,8 @@
   
 }
 
-.card__image2 {
-  flex: 0 0 auto;
-  width: 100%;
-  overflow: hidden;
-  picture {
-    display: block;
-    transform: scale(1);
-    transition: transform 0.3s ease;
-  }
-}
 
-
-.card__content2 {
+.card__content {
   padding-left: 2.4rem;
   padding-right: 2.4rem;
   flex: 0 0 auto;
@@ -195,8 +53,8 @@
   @media screen and (min-width: 900px) {
     padding-left: 0;
     padding-right: 0;
-    // flex: 0 0 auto;
-    // width: 33.33333333%;
+    flex: 0 0 auto;
+    width: 33.33333333%;
   }
   
 
@@ -212,8 +70,8 @@
     @include headlineSmall;
     margin-bottom: 1.6rem;
     @media screen and (min-width: 1200px) {
-      @include headlineLarge;
-      margin-bottom: 2.4rem;
+      @include displaySmall;
+      margin-bottom: 4rem;
     }
     
   }
@@ -230,12 +88,158 @@
       @include buttonBodyLarge;
     }
   }
+}
 
-  .arrow-right {
-    transform: translateX(0);
-    will-change: transform;
+.card__image {
+  flex: 0 0 auto;
+  width: 100%;
+  picture {
+    display: block;
+    overflow: hidden;
+  }
+
+  img {
+    transform: scale(1);
     transition: transform 0.3s ease;
   }
+
+  @media screen and (min-width: 900px) {
+    flex: 0 0 auto;
+    width: calc(66.66666667% - 4.8rem);
+  }
+  
 }
+
+.recentwork {
+  padding: 5.6rem 0;
+  @media screen and (min-width: 900px) {
+    padding: 8rem 0;
+  }
+  
+}
+.recentworkTitle {
+  @include headlineMedium;
+  margin-bottom: 2.4rem;
+  @media screen and (min-width: 900px) {
+    // margin-bottom: 3.2rem;
+    margin-bottom: 4.8rem;
+    @include displayMedium;
+  }
+  
+}
+
+// .card-groups2 {
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   align-items: flex-start;
+//   gap: 5.6rem;
+//   max-width: 144rem;
+//   margin: 0 auto;
+
+//   @media screen and (min-width: 900px) {
+//     max-width: 144rem+2.4rem+2.4rem;
+//     padding: 0 2.4rem;
+//     gap: 6.4rem 4.8rem;
+//   }
+  
+// }
+
+
+// .card2 {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+//   padding: 0;
+//   gap: 1.6rem;
+
+//   @media screen and (min-width: 900px) {
+//     align-items: flex-start;
+//     gap: 2.4rem;
+//     max-width: calc(50% - 2.4rem);
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     &:hover {
+//       .cta {
+//         text-decoration: underline;
+//         text-decoration-thickness: 0.1rem;
+//       }
+
+//       .arrow-right {
+//         transform: translateX(0.8rem);
+//       }
+  
+//       picture {
+//         transform: scale(1.02);
+//       }
+//     }
+//   }
+  
+// }
+
+// .card__image2 {
+//   flex: 0 0 auto;
+//   width: 100%;
+//   overflow: hidden;
+//   picture {
+//     display: block;
+//     transform: scale(1);
+//     transition: transform 0.3s ease;
+//   }
+// }
+
+
+// .card__content2 {
+//   padding-left: 2.4rem;
+//   padding-right: 2.4rem;
+//   flex: 0 0 auto;
+//   width: 100%;
+
+//   @media screen and (min-width: 900px) {
+//     padding-left: 0;
+//     padding-right: 0;
+//     // flex: 0 0 auto;
+//     // width: 33.33333333%;
+//   }
+  
+
+//   .client {
+//     @include font-mono;
+//     @include labelLarge;
+//     margin-bottom: 0.8rem;
+//     text-transform: uppercase;
+//   }
+
+//   .title {
+//     @include font-display;
+//     @include headlineSmall;
+//     margin-bottom: 1.6rem;
+//     @media screen and (min-width: 1200px) {
+//       @include headlineLarge;
+//       margin-bottom: 2.4rem;
+//     }
+    
+//   }
+
+//   .cta {
+//     display: inline-flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     align-items: center;
+//     @include buttonBodySmall;
+//     gap: 8px;
+
+//     @media screen and (min-width:900px) {
+//       @include buttonBodyLarge;
+//     }
+//   }
+
+//   .arrow-right {
+//     transform: translateX(0);
+//     will-change: transform;
+//     transition: transform 0.3s ease;
+//   }
+// }
 
 
