@@ -5,13 +5,14 @@ const mediaURL = "https://samuelsiau.github.io/p2023-media/";
 export interface Props {
 	client: string;
 	title: string;
+	platform: string;
 	href: string;
 	imageLarge: string;
 	imageSmall: string;
 	imageAlt: string;
 }
 
-const { href, client, title, imageLarge, imageSmall, imageAlt } = Astro.props;
+const { href, client, title, platform, imageLarge, imageSmall, imageAlt } = Astro.props;
 ---
 
 <a href={href} class="card">
@@ -24,6 +25,7 @@ const { href, client, title, imageLarge, imageSmall, imageAlt } = Astro.props;
 	<div class="card__content card-animate">
 		<p class="client">{client}</p>
 		<p class="title">{title}</p>
+		<p class="platform">{platform}</p>
 		<div class="cta">View case study <IconArrowRightLine className=""></IconArrowRightLine></div>
 	</div>
 </a>

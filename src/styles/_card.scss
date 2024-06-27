@@ -68,12 +68,20 @@
   .title {
     @include font-display;
     @include headlineSmall;
-    margin-bottom: 1.6rem;
+    margin-bottom: 0.8rem;
     @media screen and (min-width: 1200px) {
       @include displaySmall;
+      // margin-bottom: 4rem;
+    }
+  }
+
+  .platform {
+    @include bodySmall;
+    margin-bottom: 1.6rem;
+    @media screen and (min-width: 1200px) {
+      @include bodyLarge;
       margin-bottom: 4rem;
     }
-    
   }
 
   .cta {
