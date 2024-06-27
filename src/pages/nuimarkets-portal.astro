@@ -1,0 +1,124 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+import ProjectHero from "../components/projectHero.astro";
+import IconArrowRightLine from "../components/IconArrowRightLine.astro";
+import ProjectSection from "../components/ProjectSection.astro";
+import CopiesWrapper from "../components/CopiesWrapper.astro";
+import ImageWrapper from "../components/ImageWrapper.astro";
+import Figcaption from "../components/Figcaption.astro";
+import SectionSeparator from "../components/SectionSeparator.astro";
+import IframeWrapper from "../components/IframeWrapper.astro";
+
+const metaTitleName = "Attracting User Interest and Increasing Business Opportunities for Nui Markets | Samuel Siau - Product (UX/UI) Designer";
+---
+
+<Layout title={metaTitleName}>
+  <Navigation></Navigation>
+  <main class="layout">
+    <ProjectHero 
+      title="Attracting User Interest and Increasing Business Opportunities for Nui Markets" 
+      client="Nui Markets" 
+      platform="SaaS, Mobile App, Web Application"
+      completion="2024 - 4 weeks" 
+      role="As the Product Designer, I was responsible for UX research, wireframing, UI design, and prototyping. I collaborated with both the product and engineering teams." 
+      team="Rebecca Swinson (COO), Michaela Cusin (Product Manager), Tim Van Der Hulst (CTO), and Dixon Cheng (Senior Software Engineer)" 
+      imageSmall="/nuimarkets/portal/portal-hero-image@0.5x.webp" 
+      imageLarge="/nuimarkets/portal/portal-hero-image@1x.webp" 
+      imageAlt="Nuimarkets">
+    </ProjectHero>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Overview</h1>
+        <p>The portal MVP aims to capture user interest and showcase platform activity, encouraging further exploration of solutions and registration of interest.</p>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <h2>Business context</h2>
+        <p>Nui Markets is a B2B digital trading platform for agricultural commodities that offers buyers, sellers, and traders visibility of real-time data and up-to-the-minute pricing.</p>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <h2>Why are we building?</h2>
+        <p>The idea behind this project was to create a "portal" that can be used as a sales tool to attract more customers to our platform. We need to provide more data to our users. After many rounds of combined feedback from stakeholders, technical constraints, and all business decisions, we will include three widgets for the MVP V1: the last trade Nui Marketplace North America, the last trade Nui Marketplace Europe, and the upcoming tender, register other enterprise solutions.</p>
+        <p>This portal will be the entry point to the platform before users access a solution. It will provide quick, easily digestible insights to inform them of our platform activity and encourage more trading.</p>
+        <p>The portal will be built with Flutter and using the Material 3 design system. We will ensure adaptability and responsiveness for all screen sizes to unify our product into a single application and codebase.</p>
+      </CopiesWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Bring it all together.</h1>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/nuimarkets/portal/portal-mobile-app-theme@1x.webp"><Figcaption caption="Mobile App Dark and Light theme."></Figcaption></ImageWrapper>
+      <ImageWrapper imageSource="/nuimarkets/portal/portal-web-app-theme@1x.webp"><Figcaption caption="Web App dark and light theme."></Figcaption></ImageWrapper>
+      
+      <div class="row">
+        <div class="col-12">
+          <figure class="figure">
+            <video autoplay muted loop controls>
+              <source src="https://samuelsiau.github.io/p2023-media/nuimarkets/portal/portal-mobile-app.webm" type="video/webm">
+              Your browser does not support the video tag.
+            </video>
+            <div class="row">
+              <div class="col-12 col-6-lg figcaption-push-left">
+                <figcaption>Mobile App</figcaption>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <figure class="figure">
+            <video autoplay muted loop controls>
+              <source src="https://samuelsiau.github.io/p2023-media/nuimarkets/portal/portal-mobile-browser.webm" type="video/webm">
+              Your browser does not support the video tag.
+            </video>
+            <div class="row">
+              <div class="col-12 col-6-lg figcaption-push-left">
+                <figcaption>Mobile Responsive</figcaption>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <figure class="figure">
+            <video autoplay muted loop controls>
+              <source src="https://samuelsiau.github.io/p2023-media/nuimarkets/portal/portal-web-app.webm" type="video/webm">
+              Your browser does not support the video tag.
+            </video>
+            <div class="row">
+              <div class="col-12 col-6-lg figcaption-push-left">
+                <figcaption>Web App</figcaption>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </div>
+      
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Results</h1>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <h2>Outcome</h2>
+        <ul>
+          <li>Increased user engagement by 40%, bounce rate by 8%, and potential business opportunities.</li>
+          <li>Captured more buyers into the platform and increased the conversion rate for interest registration by 30% in the first six months of launch.</li>
+        </ul>
+      </CopiesWrapper>
+    </ProjectSection>
+  </main>
+  <Footer></Footer>
+</Layout>
