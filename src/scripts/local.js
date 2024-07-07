@@ -1,3 +1,5 @@
+import Lenis from "lenis";
+
 const btnBacktoTop1 = $('.backtotop1');
 const btnBacktoTop2 = $('.backtotop2');
 
@@ -19,3 +21,27 @@ btnBacktoTop1.click(function(){
 const currentYear = new Date().getFullYear();
 const currentYearText = document.querySelector("#currentyear");
 currentYearText.innerHTML = currentYear;
+
+//
+// LENIS
+//
+const lenis = new Lenis()
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+
+lenis.on('scroll', (e) => {
+  // console.log(e)
+})
+
+lenis.on('scroll', ScrollTrigger.update)
+
+gsap.ticker.add((time)=>{
+  lenis.raf(time * 1000)
+})
+
+gsap.ticker.lagSmoothing(0)
