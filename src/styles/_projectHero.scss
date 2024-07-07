@@ -38,7 +38,7 @@
     right: 0;
     bottom: 0;
     z-index: 0;
-    background-image: url('/videos/videofallbackimage.webp');
+    background-image: url('/videos/noicebackground@1x.webp');
     background-size: cover;
   }
 
@@ -51,7 +51,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('https://samuelsiau.github.io/p2023-media/videos/noise-texture.png');
+    background-image: url('/videos/noise-texture.png');
     background-repeat: repeat;
     mix-blend-mode: overlay;
   }
