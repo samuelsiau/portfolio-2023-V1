@@ -21,6 +21,10 @@
     bottom: 0;
     object-fit: cover;
     z-index: 0;
+    display: none;
+    @media screen and (min-width:900px){
+      display: block;
+    }
   }
 
   .videofallback {
@@ -28,7 +32,7 @@
     height: 100%;
     position: absolute;
     z-index: 0;
-    background-image: url('https://samuelsiau.github.io/p2023-media/videos/videofallbackimage.webp');
+    background-image: url('/videos/videofallbackimage.webp');
     background-size: cover;
   }
 
