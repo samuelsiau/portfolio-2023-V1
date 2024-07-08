@@ -15,7 +15,7 @@ const metaTitleName = "Page not found | Samuel Siau - Product (UX/UI) Designer";
 ---
 
 <Layout title={metaTitleName}>
-    <Navigation></Navigation>
+    <!-- <Navigation></Navigation> -->
     <main class="layout errorpage">
         <section class="errorHero">
             <div class="videofallback"></div>
@@ -26,15 +26,18 @@ const metaTitleName = "Page not found | Samuel Siau - Product (UX/UI) Designer";
             <div class="overlay"></div>
             <div class="container">
                 <div class="row">
+                    <div class="col-2-md"></div>
                     <div class="col-8-md">
                         <div class="content">
                             <h1>Something's wrong here.</h1>
-                            <p>This is a 404 error, which means you clicked on a bad link or entered an invalid URL. What you are looking for may be at <a href="/">samuelsiau.com</a>.</p>
+                            <p>This is a 404 error, which means you clicked on a bad link or entered an invalid URL.</p>
+                            <p>What you are looking for may be at</p>
+                            <p class="cta"><a href="/" class="button primary">samuelsiau.com <IconArrowRightLine className="arrow-right"></IconArrowRightLine></a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <Footer></Footer>
+    <!-- <Footer></Footer> -->
 </Layout>
