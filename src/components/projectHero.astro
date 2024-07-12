@@ -14,15 +14,15 @@ export interface Props {
 
 const { title, client, completion, platform, role, team, imageSmall, imageLarge, imageAlt } = Astro.props;
 
-const videoURL = "https://samuelsiau.github.io/p2023-media/videos/final.webm";
-const mediaURL = "https://samuelsiau.github.io/p2023-media";
+const videoHeroNoiseURL = "/videos/final.webm";
+const mediaURL = "/portfolios";
 
 ---
 
 <section class="projectHero" role="banner">
   <div class="videofallback"></div>
   <video class="heroVideo" autoplay muted loop controls="false">
-    <source src="/videos/final.webm" type="video/webm">
+    <source src={videoHeroNoiseURL} type="video/webm">
     Your browser does not support the video tag.
   </video>
   <div class="overlay"></div>

@@ -1,14 +1,14 @@
 ---
 
 import IconCornerRightDownLine from "./IconCornerRightDownLine.astro";
-const videoURL = "https://samuelsiau.github.io/p2023-media/videos/final.webm";
+const videoHeroNoiseURL = "/videos/final.webm";
 
 ---
 
 <section class="heroHome">
   <div class="videofallback"></div>
   <video class="heroVideo" autoplay muted loop controls="false">
-    <source src="/videos/final.webm" type="video/webm">
+    <source src={videoHeroNoiseURL} type="video/webm">
     Your browser does not support the video tag.
   </video>
   <div class="overlay"></div>
