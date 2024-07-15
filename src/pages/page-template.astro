@@ -1,0 +1,98 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+import ProjectHero from "../components/projectHero.astro";
+import IconArrowRightLine from "../components/IconArrowRightLine.astro";
+import ProjectSection from "../components/ProjectSection.astro";
+import CopiesWrapper from "../components/CopiesWrapper.astro";
+import ImageWrapper from "../components/ImageWrapper.astro";
+import Figcaption from "../components/Figcaption.astro";
+import SectionSeparator from "../components/SectionSeparator.astro";
+import IframeWrapper from "../components/IframeWrapper.astro";
+
+const metaTitleName = "Attracting User Interest and Increasing Business Opportunities for Nui Markets | Samuel Siau - Product (UX/UI) Designer";
+---
+
+<Layout title={metaTitleName}>
+  <Navigation></Navigation>
+  <main class="layout">
+    <ProjectHero 
+      title="Title" 
+      client="Client" 
+      platform="SaaS, Mobile App, Web Application"
+      completion="2024 - 4 weeks" 
+      role="Lorum ipsum dolor sit amet" 
+      team="Team name goes here" 
+      imageSmall="/example/hero-image960x590@0.5x.png" 
+      imageLarge="/example/hero-image1920x1180@1x.png" 
+      imageAlt="image description">
+    </ProjectHero>
+
+    <ProjectSection>
+      <CopiesWrapper>
+        <h1>Heading 1</h1>
+        <p>Paragraph</p>
+      </CopiesWrapper>
+      <CopiesWrapper>
+        <h2>Heading 2</h2>
+        <p>Paragraph</p>
+      </CopiesWrapper>
+      <ImageWrapper imageSource="/example/hero-image1920x1180@1x.png"></ImageWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+      <ImageWrapper imageSource="/example/hero-image1920x1180@1x.png"><Figcaption caption="Figcaption goes here"></Figcaption></ImageWrapper>
+      
+      <div class="row">
+        <div class="col-12">
+          <figure class="figure">
+            <video autoplay muted loop controls>
+              <source src="/portfolios/example/big-buck-bunny_trailer.webm" type="video/webm">
+              Your browser does not support the video tag.
+            </video>
+            <div class="row">
+              <div class="col-12 col-6-lg figcaption-push-left">
+                <figcaption>Mobile App</figcaption>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+            
+        </div>
+      </div>
+      <script src="../scripts/carousel.js"></script>
+      
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+        <CopiesWrapper>
+            <h1>Results</h1>
+        </CopiesWrapper>
+        <CopiesWrapper>
+            <h2>Outcome</h2>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+            </ul>
+        </CopiesWrapper>
+        <CopiesWrapper>
+            <h2>Reflection</h2>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+            </ul>
+        </CopiesWrapper>
+    </ProjectSection>
+
+  </main>
+  <Footer></Footer>
+</Layout>
