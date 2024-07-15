@@ -169,12 +169,12 @@ https://flickity.metafizzy.co
         height: 50rem;
     }
 
-    @media screen and (min-width:900px)  {
+    @media screen and (min-width:900px) {
         height: 78rem;
     }
 }
 
-.carousel img {
+.carousel-cell img {
     display: block;
     max-height: 100%;
     margin: 0 auto;
