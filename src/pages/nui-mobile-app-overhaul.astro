@@ -1,0 +1,267 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+import ProjectHero from "../components/projectHero.astro";
+import IconArrowRightLine from "../components/IconArrowRightLine.astro";
+import IconArrowLeftLine from "../components/IconArrowLeftLine.astro";
+import ProjectSection from "../components/ProjectSection.astro";
+import CopiesWrapper from "../components/CopiesWrapper.astro";
+import ImageWrapper from "../components/ImageWrapper.astro";
+import Figcaption from "../components/Figcaption.astro";
+import SectionSeparator from "../components/SectionSeparator.astro";
+import IframeWrapper from "../components/IframeWrapper.astro";
+
+const metaTitleName = "Attracting User Interest and Increasing Business Opportunities for Nui Markets | Samuel Siau - Product (UX/UI) Designer";
+---
+
+<Layout title={metaTitleName}>
+  <Navigation></Navigation>
+  <main class="layout">
+    <ProjectHero 
+      title="Nui Markets Mobile App Overhaul" 
+      client="Nui Markets" 
+      platform="SaaS, Mobile App"
+      completion="2024 - 5 months" 
+      role="As the sole product designer in this company, I collaborated with a product and development team to lead the company's adoption of the Material 3 design system and educate and train the team on the new design system. Through a collaborative effort, I identified the mobile app UX and UI issues and proposed design recommendations to the team. Additionally, I spearheaded the creation of UI designs and interactive prototypes, ensuring a seamless and consistent experience across all platforms." 
+      team="Rebecca Swinson (COO), Michaela Cusin (Product Manager), Tim Van Der Hulst (CTO), and Dixon Cheng (Senior Software Engineer)" 
+      imageSmall="/nuimarkets/mobile/nui-mobileapp-hero@0.5x.webp" 
+      imageLarge="/nuimarkets/mobile/nui-mobileapp-hero@1x.webp" 
+      imageAlt="Nui Markets - Mobile App">
+    </ProjectHero>
+
+    <ProjectSection>
+        <CopiesWrapper>
+            <h1>Overview</h1>
+            <p>Nui Markets is a B2B digital trading platform for agricultural commodities that offers buyers, sellers, and traders visibility of real-time data and up-to-the-minute pricing. The Nui Markets mobile app requires a comprehensive visual and user experience overhaul to update its Material 3 appearance, address functionality issues, and brand alignment with the Nui Markets brand and client brand identity.</p>
+        </CopiesWrapper>
+    </ProjectSection>
+
+    <ProjectSection>
+        <CopiesWrapper>
+            <h1>The Plan</h1>
+            <p>Before we began the project.</p>
+        </CopiesWrapper>
+        <ImageWrapper imageSource="/nuimarkets/mobile/message-from-manager@1x.webp"><Figcaption caption="The conversation from my manager."></Figcaption></ImageWrapper>
+        <CopiesWrapper>
+            <p>I conducted a UX audit of the mobile app, capturing screenshots and thoroughly documenting all functionalities. I identified and discovered areas that needed improvement and made detailed notes about them.</p>
+        </CopiesWrapper>
+        <div class="row">
+            <div class="col-12">
+              <div class="slider-container">
+                <div class="slider">
+                  <div>
+                    <img src="/portfolios/nuimarkets/mobile/discovery-01@1x.webp" />
+                  </div>
+                  <div>
+                    <img src="/portfolios/nuimarkets/mobile/discovery-02@1x.webp" />
+                  </div>
+                  <div>
+                    <img src="/portfolios/nuimarkets/mobile/discovery-03@1x.webp" />
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+              <div class="slider-container">
+                <div class="slider">
+                  <div>
+                    <img src="/portfolios/nuimarkets/mobile/discovery-04@1x.webp" />
+                  </div>
+                  <div>
+                    <img src="/portfolios/nuimarkets/mobile/discovery-05@1x.webp" />
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <CopiesWrapper>
+            <p>After presenting these improvement areas to the stakeholders, I communicated the importance of action and bringing value and output. We have agreed to proceed, but we will do so gradually.</p>
+        </CopiesWrapper>
+        <CopiesWrapper>
+            <h2>Overall, areas for improvement and overhaul were identified.</h2>
+            <ol>
+                <li>Theming and branding.</li>
+                <li>Usability issues and legibility issues on the mobile app.</li>
+                <li>Prioritisation content and cluttered layout.</li>
+                <li>Address functionality issue.</li>
+            </ol>
+        </CopiesWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+        <CopiesWrapper>
+            <h1>Additionally...</h1>
+            <p>Additionally, the company transitioned to the Material 3 design system based on business decisions and technical requirements. I had some knowledge about Material 1 and 2 because I had used them before. Still, I needed to learn about Material 3 design and spearhead educating and training the team on the new design system.</p>
+        </CopiesWrapper>
+        <div class="row">
+            <div class="col-12">
+              <div class="slider-container">
+                <div class="slider">
+                  <div>
+                    <img src="/portfolios/nuimarkets/mobile/m3-slide-01@1x.webp" />
+                  </div>
+                  <div>
+                    <img src="/portfolios/nuimarkets/mobile/m3-slide-01-1@1x.webp" />
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <CopiesWrapper>
+            <p>Regarding the colours, the colour of the Material 3 design is one of the main selling points of its features. Therefore, use Material Theme Builder to generate a colour scheme. Choose a primary, secondary, and tertiary colour and let the system make crucial adjustments, ensuring accessible colour contrast, readability, interactive states, and overall component structure.</p>
+            <p>Colours are a powerful design tool, especially in product design. They can express brand and style, convey meaning, and enhance visual accessibility in applications, such as mobile apps.</p>
+        </CopiesWrapper>
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+        <CopiesWrapper>
+            <h1>The theming and branding</h1>
+        </CopiesWrapper>
+        <CopiesWrapper>
+            <h2>The problem</h2>
+            <p>I looked up the platform on the web app. Every client has a theme aligned with their brand identity. Still, the mobile app needs to, which is reducing user satisfaction. The client's customer logged into the mobile app and found it looked like something other than the company they signed up to trade with.</p>
+            <p>Most heard feedback from stakeholders.</p>
+            <ul>
+                <li><strong>"This doesn't look like Nui?"</strong></li>
+                <li><strong>"This doesn't look like Hilmar?"</strong></li>
+            </ul>
+            <p>
+                <strong>Context:</strong>
+                Nui Enterprise is a private trading platform for individual companies, where the companies are sellers. When the companies sign up for the Nui Enterprise, they will have their own theme and brand identity. 
+            </p>
+        </CopiesWrapper>
+
+      <ImageWrapper imageSource="/nuimarkets/mobile/current-web-app-enterprise@1x.webp"><Figcaption caption="The original web app. Every client has its own theme and brand on the web app."></Figcaption></ImageWrapper>
+
+      <ImageWrapper imageSource="/nuimarkets/mobile/current-mobile-app-enterprise@1x.webp"><Figcaption caption="The original mobile app before overhaul. Don't have own theme on the mobile app."></Figcaption></ImageWrapper>
+      
+      <CopiesWrapper>
+        <h2>The solution</h2>
+        <p>I partnered with my manager and suggested incorporating their brand colour into the mobile app. I made a PDF to showcase how their brand colour would look on the platform and then shared the PDF with all of the clients for approval. The good news is that the clients are delighted with the changes.</p>
+      </CopiesWrapper>
+      
+      <div class="row">
+        <div class="col-12">
+            <div class="slider-container">
+                <div class="slider">
+                    <div>
+                        <img src="/portfolios/nuimarkets/mobile/enterprise-level-concept-01@1x.webp">
+                    </div>
+                    <div>
+                        <img src="/portfolios/nuimarkets/mobile/enterprise-level-concept-02@1x.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <CopiesWrapper>
+        <p>Applied the Nui and client's brand theme colour to the mobile app.</p>
+      </CopiesWrapper>
+
+      <ImageWrapper imageSource="/nuimarkets/mobile/theming-outcome@1x.webp"><Figcaption caption="After redesigned. All clients' brands and themes are applied to the platform."></Figcaption></ImageWrapper>
+      
+      <CopiesWrapper>
+        <h2>Outcome</h2>
+        <p>This is crucial to aligning the mobile app with the company's brand identity. By doing so, we significantly improve user satisfaction. The client's customers immediately recognise a specific company they trade with.</p>
+      </CopiesWrapper>
+
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+        <CopiesWrapper>
+            <h1>The challenges and recommendations on usability, legibility, and functionality.</h1>
+        </CopiesWrapper>
+        <CopiesWrapper>
+            <p>We are facing challenges in redesigning our project. As we go through the overhaul, we identify technical limitations, complex features, and user experience issues. It's crucial to keep stakeholders informed about the progress and address these issues individually. I have organised feedback and issues in one place. Despite the complexity, it's important to take action and make progress.</p>
+        </CopiesWrapper>
+        <ImageWrapper imageSource="/nuimarkets/mobile/all-issues@1x.webp"><Figcaption caption="All the challenges, identified areas of improvement, and feedback are consolidated in Miro and tickets."></Figcaption></ImageWrapper>
+
+        <CopiesWrapper>
+            <h1>There are more challenges, but I show here a couple of highlights.</h1>
+        </CopiesWrapper>
+
+        <CopiesWrapper>
+            <h2>No. 1<br />
+                The insufficient contrast between background and foreground makes it difficult for the user to scan the content and decide on an action.</h2>
+        </CopiesWrapper>
+        <ImageWrapper imageSource="/nuimarkets/mobile/gray-01@1x.webp"><Figcaption caption="The original mobile app before overhaul, the user interface was dull and rigid to scan."></Figcaption></ImageWrapper>
+        <CopiesWrapper>
+            <p>When I presented my plan and identified areas for improvement to stakeholders. They also agreed they heard much of what our clients and clients' customers said about the mobile app's being unreadable.</p>
+            <p>In addition, the grey text is displayed on a grey background, making it difficult for the user to read. I checked the mobile app's source code, which uses a thinner font-weight!</p>
+            <p>Especially on Trade, Counter, and Edit Counter are the most important features in the platform to generate revenue for Nui Markets.</p>
+        </CopiesWrapper>
+        <CopiesWrapper>
+            <h2>The solution</h2>
+            <p>To improve the contrast, change the text and background colours. Increase or adjust the font size and weight, making the text more legible or enhancing readability. Ensure user experience aligns with accessibility standards, such as WCAG colour contrast ratios. However, the Material 3 design already incorporates accessibility and usability for colour. It's still worth checking with WCAG for colour contrast.</p>
+        </CopiesWrapper>
+        <ImageWrapper imageSource="/nuimarkets/mobile/gray-02@1x.webp"><Figcaption caption="After overhauling the mobile app."></Figcaption></ImageWrapper>
+        <CopiesWrapper>
+            <h2>The outcome</h2>
+            <p>The users can read it without effort and make good use of the information we want to convey, improving the overall user experience. Importantly, accessibility makes perfect business sense. It helps Nui Markets access a wider and more diverse range of customers and stand out from competitors not focused on accessibility.</p>
+        </CopiesWrapper>
+        <CopiesWrapper>
+            <h2>No. 2<br />
+                There is unclear and confusing feedback for the users to understand what to do.</h2>
+        </CopiesWrapper>
+
+        <div class="row">
+            <div class="col-12">
+              <figure class="figure">
+                <video autoplay muted loop controls>
+                  <source src="/portfolios/nuimarkets/mobile/security-issue-video.webm" type="video/webm">
+                  Your browser does not support the video tag.
+                </video>
+                <div class="row">
+                  <div class="col-12 col-6-lg figcaption-push-left">
+                    <figcaption>Before overhauling the mobile app.</figcaption>
+                  </div>
+                </div>
+              </figure>
+            </div>
+        </div>
+
+        <CopiesWrapper>
+            <p>The immediately opened drawer and the toast banner message functionality need improvement. If a user attempts to trade but straightaway provides the feedback, "Authorisation not set. You need to set up a security method first", what does that mean to the user?</p>
+            <p>Users may need help understanding and achieving their goals, leading to confusion, wrong paths, and a negative experience.</p>
+        </CopiesWrapper>
+
+        <CopiesWrapper>
+            <h2>The solution</h2>
+            <p>The flow must clearly tell users how to achieve their goals by rewriting the message and providing guidance.</p>
+            <p>I recalled reading a book called <strong>"Don't Make Me Think"</strong>. I learned from this book:</p>
+            <ul>
+                <li><strong>"Make it obvious. When you want someone to do something, make it super clear what you want them to do. Don't make them guess."</strong></li>
+                <li><strong>"When someone does something, tell them what happened. Did it work? Did it not work? Let them know!"</strong></li>
+            </ul>
+            <p>These two perfectly fit in to solve this problem within this scenario.</p>
+        </CopiesWrapper>
+
+        <ImageWrapper imageSource="/nuimarkets/mobile/security-issue-solution@1x.webp"><Figcaption caption="After overhauling the mobile app. Provided clear guidance to the user."></Figcaption></ImageWrapper>
+
+    </ProjectSection>
+
+    <SectionSeparator></SectionSeparator>
+
+    <ProjectSection>
+        <CopiesWrapper>
+            <h1>Finally, about this project</h1>
+        </CopiesWrapper>
+        <CopiesWrapper>
+            <p>We'll address current challenges by simplifying complex features, prioritising urgent issues, and conducting thorough technical audits and user testing. Regular stakeholder updates will keep everyone informed, and we'll make steady progress by breaking the redesign into manageable tasks. Ultimately, we aim to deliver a streamlined, user-friendly product that meets technical requirements and user needs, positioning us strongly in the market.</p>
+        </CopiesWrapper>
+    </ProjectSection>
+
+  </main>
+  <Footer></Footer>
+  <script src="../scripts/carousel.js"></script>
+</Layout>
