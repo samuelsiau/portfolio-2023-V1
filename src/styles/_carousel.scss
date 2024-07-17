@@ -126,8 +126,14 @@
 .slider {
     padding-bottom: 2.4rem;
     .slick-slide {
-        height: 60rem;
+        height: 32rem;
         margin-left: 2.4rem;
+        @media screen and (min-width: 599px) {
+            height: 42rem;
+        }
+        @media screen and (min-width: 900px) {
+            height: 76rem;
+        }
         img {
             display: block;
             max-height: 100%;
