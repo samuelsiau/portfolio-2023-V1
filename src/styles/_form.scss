@@ -224,7 +224,8 @@ button:active:not(:disabled) {
     fill: var(--color-primary_01);
   }
 
-  .arrow-right {
+  .arrow-right,
+  .arrow-left {
     transform: translateX(0);
     will-change: transform;
     transition: transform 0.3s ease;
