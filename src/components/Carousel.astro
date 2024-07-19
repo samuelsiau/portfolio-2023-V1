@@ -1,5 +1,7 @@
 ---
 
+import IconArrowLeftLine from "./IconArrowLeftLine.astro"
+import IconArrowRightLine from "./IconArrowRightLine.astro"
 
 ---
 
@@ -10,6 +12,8 @@
         <div class="main-carousel">
           <slot />
         </div>
+        <button disabled class="button primary prev"><IconArrowLeftLine className="icon"></IconArrowLeftLine></button>
+        <button class="button primary next"><IconArrowRightLine className="icon"></IconArrowRightLine></button>
       </div>
     </div>
   </div>

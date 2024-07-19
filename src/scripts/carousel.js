@@ -10,23 +10,29 @@ $(document).ready(function(){
     var $container = $(container);
     var $carousel = $container.find('.main-carousel');
     var flkty = $carousel.data('flickity');
-    // var selectedIndex = flkty.selectedIndex;
 
-    // $carousel.on( 'change.flickity', function( event, index ) {
-    //   console.log( 'Slide changed to ' + index )
-    // });
+    var $prev = $container.find('.prev');
+    $prev.on('click', function(){
+      $carousel.flickity('previous');
+    })
 
-    // console.log(flkty)
-    
-    // var $prev = $container.find('.prev');
-    // $prev.on('click', function(){
-    //   $carousel.flickity('previous');
-    // })
+    var $next = $container.find('.next');
+    $next.on('click', function(){
+      $carousel.flickity('next');
+    })
 
-    // var $next = $container.find('.next');
-    // $next.on('click', function(){
-    //   $carousel.flickity('next');
-    // })
+    flkty.on( 'cellSelect', function() {
+      if (!flkty.cells[ flkty.selectedIndex - 1 ]) {
+        $prev.attr('disabled', 'disabled');
+        $next.removeAttr('disabled');
+      } else if ( !flkty.cells[ flkty.selectedIndex +1 ]) {
+        $next.attr('disabled', 'disabled');
+        $prev.removeAttr('disabled');
+      } else {
+        $next.removeAttr('disabled');
+        $prev.removeAttr('disabled');
+      }
+    });
   })
 
 });
