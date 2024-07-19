@@ -11,6 +11,8 @@ import ImageWrapper from "../components/ImageWrapper.astro";
 import Figcaption from "../components/Figcaption.astro";
 import SectionSeparator from "../components/SectionSeparator.astro";
 import IframeWrapper from "../components/IframeWrapper.astro";
+import Carousel from "../components/Carousel.astro";
+import CarouselCell from "../components/CarouselCell.astro";
 
 const metaTitleName = "Attracting User Interest and Increasing Business Opportunities for Nui Markets | Samuel Siau - Product (UX/UI) Designer";
 ---
@@ -48,37 +50,28 @@ const metaTitleName = "Attracting User Interest and Increasing Business Opportun
         <CopiesWrapper>
             <p>I conducted a UX audit of the mobile app, capturing screenshots and thoroughly documenting all functionalities. I identified and discovered areas that needed improvement and made detailed notes about them.</p>
         </CopiesWrapper>
-        <div class="row">
-            <div class="col-12">
-              <div class="slider-container">
-                <div class="slider">
-                  <div>
-                    <img src="/portfolios/nuimarkets/mobile/discovery-01@1x.webp" />
-                  </div>
-                  <div>
-                    <img src="/portfolios/nuimarkets/mobile/discovery-02@1x.webp" />
-                  </div>
-                  <div>
-                    <img src="/portfolios/nuimarkets/mobile/discovery-03@1x.webp" />
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-              <div class="slider-container">
-                <div class="slider">
-                  <div>
-                    <img src="/portfolios/nuimarkets/mobile/discovery-04@1x.webp" />
-                  </div>
-                  <div>
-                    <img src="/portfolios/nuimarkets/mobile/discovery-05@1x.webp" />
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
+
+        <Carousel>
+          <CarouselCell>
+            <img src="/portfolios/nuimarkets/mobile/discovery-01@1x.webp" />
+          </CarouselCell>
+          <CarouselCell>
+            <img src="/portfolios/nuimarkets/mobile/discovery-02@1x.webp" />
+          </CarouselCell>
+          <CarouselCell>
+            <img src="/portfolios/nuimarkets/mobile/discovery-03@1x.webp" />
+          </CarouselCell>
+        </Carousel>
+
+        <Carousel>
+          <CarouselCell>
+            <img src="/portfolios/nuimarkets/mobile/discovery-04@1x.webp" />
+          </CarouselCell>
+          <CarouselCell>
+            <img src="/portfolios/nuimarkets/mobile/discovery-05@1x.webp" />
+          </CarouselCell>
+        </Carousel>
+
         <CopiesWrapper>
             <p>After presenting these improvement areas to the stakeholders, I communicated the importance of action and bringing value and output. We have agreed to proceed, but we will do so gradually.</p>
         </CopiesWrapper>
@@ -100,20 +93,16 @@ const metaTitleName = "Attracting User Interest and Increasing Business Opportun
             <h1>Additionally...</h1>
             <p>Additionally, the company transitioned to the Material 3 design system based on business decisions and technical requirements. I had some knowledge about Material 1 and 2 because I had used them before. Still, I needed to learn about Material 3 design and spearhead educating and training the team on the new design system.</p>
         </CopiesWrapper>
-        <div class="row">
-            <div class="col-12">
-              <div class="slider-container">
-                <div class="slider">
-                  <div>
-                    <img src="/portfolios/nuimarkets/mobile/m3-slide-01@1x.webp" />
-                  </div>
-                  <div>
-                    <img src="/portfolios/nuimarkets/mobile/m3-slide-01-1@1x.webp" />
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
+
+        <Carousel>
+          <CarouselCell>
+            <img src="/portfolios/nuimarkets/mobile/m3-slide-01@1x.webp" />
+          </CarouselCell>
+          <CarouselCell>
+            <img src="/portfolios/nuimarkets/mobile/m3-slide-01-1@1x.webp" />
+          </CarouselCell>
+        </Carousel>
+
         <CopiesWrapper>
             <p>Regarding the colours, the colour of the Material 3 design is one of the main selling points of its features. Therefore, use Material Theme Builder to generate a colour scheme. Choose a primary, secondary, and tertiary colour and let the system make crucial adjustments, ensuring accessible colour contrast, readability, interactive states, and overall component structure.</p>
             <p>Colours are a powerful design tool, especially in product design. They can express brand and style, convey meaning, and enhance visual accessibility in applications, such as mobile apps.</p>
@@ -148,21 +137,15 @@ const metaTitleName = "Attracting User Interest and Increasing Business Opportun
         <h2>The solution</h2>
         <p>I partnered with my manager and suggested incorporating their brand colour into the mobile app. I made a PDF to showcase how their brand colour would look on the platform and then shared the PDF with all of the clients for approval. The good news is that the clients are delighted with the changes.</p>
       </CopiesWrapper>
-      
-      <div class="row">
-        <div class="col-12">
-            <div class="slider-container">
-                <div class="slider">
-                    <div>
-                        <img src="/portfolios/nuimarkets/mobile/enterprise-level-concept-01@1x.webp">
-                    </div>
-                    <div>
-                        <img src="/portfolios/nuimarkets/mobile/enterprise-level-concept-02@1x.webp">
-                    </div>
-                </div>
-            </div>
-        </div>
-      </div>
+
+      <Carousel>
+        <CarouselCell>
+          <img src="/portfolios/nuimarkets/mobile/enterprise-level-concept-01@1x.webp">
+        </CarouselCell>
+        <CarouselCell>
+          <img src="/portfolios/nuimarkets/mobile/enterprise-level-concept-02@1x.webp">
+        </CarouselCell>
+      </Carousel>
 
       <CopiesWrapper>
         <p>Applied the Nui and client's brand theme colour to the mobile app.</p>
