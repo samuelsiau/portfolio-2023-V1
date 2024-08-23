@@ -6,14 +6,19 @@ import IconArrowRightLine from "../icons/IconArrowRightLine.astro"
 ---
 
 
-<div class="row">
+<div class="container">
+  <div class="row">
     <div class="col-12">
-      <div class="carousel-container">
-        <div class="main-carousel">
-          <slot />
+      <div class="swiper-container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <slot />
+          </div>
+          <button class="button primary swiper-btn-prev"><IconArrowLeftLine className="icon"></IconArrowLeftLine></button>
+          <button class="button primary swiper-btn-next"><IconArrowRightLine className="icon"></IconArrowRightLine></button>
+          <div class="swiper-pagination"></div>
         </div>
-        <button disabled class="button primary prev"><IconArrowLeftLine className="icon"></IconArrowLeftLine></button>
-        <button class="button primary next"><IconArrowRightLine className="icon"></IconArrowRightLine></button>
       </div>
     </div>
   </div>
+</div>

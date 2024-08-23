@@ -10,19 +10,15 @@
 }
 
 .projectSection {
+  display: flex;
+  flex-direction: column;
   padding-top: 5.6rem;
   padding-bottom: 5.6rem;
+  gap: 2.4rem;
   @media screen and (min-width: 900px) {
     padding-top: 8.0rem;
     padding-bottom: 8.0rem;
-  }
-  .container {
-    display: flex;
-    flex-direction: column;
-    gap: 2.4rem;
-    @media screen and (min-width: 900px) {
-      gap: 4.8rem;
-    }
+    gap: 4.8rem;
   }
 
   .sectionCopies {
