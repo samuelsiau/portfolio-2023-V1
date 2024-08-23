@@ -10,6 +10,7 @@ import ImageWrapper from "../components/ImageWrapper.astro";
 import Figcaption from "../components/Figcaption.astro";
 import SectionSeparator from "../components/SectionSeparator.astro";
 import IframeWrapper from "../components/IframeWrapper.astro";
+import VideoWrapper from "../components/VideoWrapper.astro";
 
 const metaTitleName = "Attracting User Interest and Increasing Business Opportunities for Nui Markets | Samuel Siau - Product (UX/UI) Designer";
 ---
@@ -60,53 +61,18 @@ const metaTitleName = "Attracting User Interest and Increasing Business Opportun
       <ImageWrapper imageSource="/nuimarkets/portal/portal-mobile-app-theme@1x.webp"><Figcaption caption="Mobile App Dark and Light theme."></Figcaption></ImageWrapper>
       <ImageWrapper imageSource="/nuimarkets/portal/portal-web-app-theme@1x.webp"><Figcaption caption="Web App dark and light theme."></Figcaption></ImageWrapper>
       
-      <div class="row">
-        <div class="col-12">
-          <figure class="figure">
-            <video autoplay muted loop controls>
-              <source src="/portfolios/nuimarkets/portal/portal-mobile-app.webm" type="video/webm">
-              Your browser does not support the video tag.
-            </video>
-            <div class="row">
-              <div class="col-12 col-6-lg figcaption-push-left">
-                <figcaption>Mobile App</figcaption>
-              </div>
-            </div>
-          </figure>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-12">
-          <figure class="figure">
-            <video autoplay muted loop controls>
-              <source src="/portfolios/nuimarkets/portal/portal-mobile-browser.webm" type="video/webm">
-              Your browser does not support the video tag.
-            </video>
-            <div class="row">
-              <div class="col-12 col-6-lg figcaption-push-left">
-                <figcaption>Mobile Responsive</figcaption>
-              </div>
-            </div>
-          </figure>
-        </div>
-      </div>
+      <VideoWrapper videoSource="/portfolios/nuimarkets/portal/portal-mobile-app.webm">
+        <Figcaption caption="Mobile App"></Figcaption>
+      </VideoWrapper>
 
-      <div class="row">
-        <div class="col-12">
-          <figure class="figure">
-            <video autoplay muted loop controls>
-              <source src="/portfolios/nuimarkets/portal/portal-web-app.webm" type="video/webm">
-              Your browser does not support the video tag.
-            </video>
-            <div class="row">
-              <div class="col-12 col-6-lg figcaption-push-left">
-                <figcaption>Web App</figcaption>
-              </div>
-            </div>
-          </figure>
-        </div>
-      </div>
+      <VideoWrapper videoSource="/portfolios/nuimarkets/portal/portal-mobile-browser.webm">
+        <Figcaption caption="Mobile Responsive"></Figcaption>
+      </VideoWrapper>
+
+      <VideoWrapper videoSource="/portfolios/nuimarkets/portal/portal-web-app.webm">
+        <Figcaption caption="Web App"></Figcaption>
+      </VideoWrapper>
       
     </ProjectSection>
 

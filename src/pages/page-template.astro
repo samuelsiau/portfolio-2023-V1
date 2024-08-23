@@ -13,6 +13,7 @@ import SectionSeparator from "../components/SectionSeparator.astro";
 import IframeWrapper from "../components/IframeWrapper.astro";
 import Carousel from "../components/carousel/Carousel.astro";
 import CarouselCell from "../components/carousel/CarouselCell.astro";
+import VideoWrapper from "../components/VideoWrapper.astro";
 
 const metaTitleName = "Attracting User Interest and Increasing Business Opportunities for Nui Markets | Samuel Siau - Product (UX/UI) Designer";
 ---
@@ -64,21 +65,10 @@ const metaTitleName = "Attracting User Interest and Increasing Business Opportun
     <ProjectSection>
       <ImageWrapper imageSource="/example/hero-image1920x1180@1x.png"><Figcaption caption="Figcaption goes here"></Figcaption></ImageWrapper>
       
-      <div class="row">
-        <div class="col-12">
-          <figure class="figure">
-            <video autoplay muted loop controls>
-              <source src="/portfolios/example/big-buck-bunny_trailer.webm" type="video/webm">
-              Your browser does not support the video tag.
-            </video>
-            <div class="row">
-              <div class="col-12 col-6-lg figcaption-push-left">
-                <figcaption>Mobile App</figcaption>
-              </div>
-            </div>
-          </figure>
-        </div>
-      </div>
+
+      <VideoWrapper videoSource="/portfolios/example/big-buck-bunny_trailer.webm">
+        <Figcaption caption="Mobile App"></Figcaption>
+      </VideoWrapper>
 
       
       

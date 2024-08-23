@@ -9,13 +9,15 @@ const mediaURL = "/portfolios";
 
 ---
 
-<div class="row">
-  <div class="col-12">
-    <figure class="figure">
-      <picture>
-        <img src={mediaURL+imageSource} alt="" loading="lazy">
-      </picture>
-      <slot />
-    </figure>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <figure class="figure">
+        <picture>
+          <img src={mediaURL+imageSource} alt="" loading="lazy">
+        </picture>
+        <slot />
+      </figure>
+    </div>
   </div>
 </div>

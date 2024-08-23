@@ -1,0 +1,22 @@
+---
+
+interface Props {
+  videoSource: string;
+}
+
+const { videoSource } = Astro.props;
+
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <figure class="figure">
+                <video src={videoSource} autoplay muted loop controls>
+                    Your browser does not support the video tag.
+                </video>
+                <slot />
+            </figure>
+        </div>
+    </div>
+</div>

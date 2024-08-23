@@ -13,6 +13,7 @@ import SectionSeparator from "../components/SectionSeparator.astro";
 import IframeWrapper from "../components/IframeWrapper.astro";
 import Carousel from "../components/carousel/Carousel.astro";
 import CarouselCell from "../components/carousel/CarouselCell.astro";
+import VideoWrapper from "../components/VideoWrapper.astro";
 
 const metaTitleName = "Attracting User Interest and Increasing Business Opportunities for Nui Markets | Samuel Siau - Product (UX/UI) Designer";
 ---
@@ -199,21 +200,9 @@ const metaTitleName = "Attracting User Interest and Increasing Business Opportun
                 There is unclear and confusing feedback for the users to understand what to do.</h2>
         </CopiesWrapper>
 
-        <div class="row">
-            <div class="col-12">
-              <figure class="figure">
-                <video autoplay muted loop controls>
-                  <source src="/portfolios/nuimarkets/mobile/security-issue-video.webm" type="video/webm">
-                  Your browser does not support the video tag.
-                </video>
-                <div class="row">
-                  <div class="col-12 col-6-lg figcaption-push-left">
-                    <figcaption>Before overhauling the mobile app.</figcaption>
-                  </div>
-                </div>
-              </figure>
-            </div>
-        </div>
+        <VideoWrapper videoSource="/portfolios/nuimarkets/mobile/security-issue-video.webm">
+          <Figcaption caption="Before overhauling the mobile app."></Figcaption>
+        </VideoWrapper>
 
         <CopiesWrapper>
             <p>The immediately opened drawer and the toast banner message functionality need improvement. If a user attempts to trade but straightaway provides the feedback, <strong>"Authorisation not set. You need to set up a security method first"</strong>, <strong>what does that mean to the user?</strong></p>

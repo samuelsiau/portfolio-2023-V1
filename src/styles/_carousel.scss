@@ -1,54 +1,58 @@
-@import "_flickity";
+@import "_swiper";
 
-.carousel-container {
-    width: 100vw;
-    position: relative;
-    left: calc(-50vw + 50%);
-    right: calc(-50vw + 50%);
+.swiper-container {
+    width: 100%;
+    // width: 100vw;
+    // position: relative;
+    // left: calc(-50vw + 50%);
+    // right: calc(-50vw + 50%);
 }
 
-.main-carousel {
+
+.swiper {
     padding-bottom: 4.8rem;
-    .flickity-page-dots {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        bottom: 1.8rem;
+}
+
+
+.swiper-slide {
+    width: fit-content;
+
+    img {
+        display: block;
+        height: 32rem;
+
+        @media screen and (min-width: 599px) {
+            height: 48rem;
+        }
+
+        @media screen and (min-width: 900px) {
+            height: 64rem;
+        }
+        @media screen and (min-width: 1200px) {
+            height: 72rem;
+        }
+        @media screen and (min-width: 1450px) {
+            height: 80rem;
+        }
     }
 }
 
-.button.primary.prev,
-.button.primary.next {
+.button.primary.swiper-btn-prev,
+.button.primary.swiper-btn-next {
     padding: 2.4rem;
     position: absolute;
     bottom: 1.2rem;
     right: 0;
 }
 
-.button.primary.prev {
+.button.primary.swiper-btn-prev {
     right: 10.6rem;
 }
-.button.primary.next {
+
+.button.primary.swiper-btn-next {
     right: 2.8rem;
 }
 
-.button.primary.prev + .button.primary.next {
+.button.primary.swiper-btn-prev+.button.primary.swiper-btn-next {
     margin-left: 0;
-}
-
-.carousel-cell {
-    height: 32rem;
-    margin-left: 2.4rem;
-    @media screen and (min-width: 599px) {
-        height: 42rem;
-    }
-    @media screen and (min-width: 900px) {
-        height: 76rem;
-    }
-    img {
-        display: block;
-        max-height: 100%;
-        margin: 0 auto;
-        max-width: 100%;
-    }
 }
